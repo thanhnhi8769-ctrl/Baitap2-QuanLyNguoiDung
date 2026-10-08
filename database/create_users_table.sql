@@ -1,8 +1,6 @@
-CREATE DATABASE QuanLyNguoiDung;
-GO
-
 USE QuanLyNguoiDung;
-GO
+
+DROP TABLE IF EXISTS Users;
 
 CREATE TABLE Users (
     UserId INT IDENTITY(1,1) PRIMARY KEY,
@@ -15,9 +13,7 @@ CREATE TABLE Users (
     LanDangNhapCuoi DATETIME2 NULL
 );
 
-
 INSERT INTO Users (TenDangNhap, MatKhauBam, Salt, HoTen, Email)
 VALUES ('admin', 'dummy_hash_string_for_testing', 'dummy_salt_string', N'Quan Tri Vien', 'admin@uit.edu.vn');
-
 
 SELECT * FROM Users;
