@@ -206,9 +206,9 @@
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(361, 345);
+            btnCancel.Location = new Point(321, 345);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(125, 31);
+            btnCancel.Size = new Size(165, 31);
             btnCancel.TabIndex = 9;
             btnCancel.Text = "Huỷ";
             btnCancel.UseVisualStyleBackColor = true;
@@ -216,9 +216,9 @@
             // 
             // btnRegister
             // 
-            btnRegister.Location = new Point(216, 345);
+            btnRegister.Location = new Point(144, 345);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(125, 31);
+            btnRegister.Size = new Size(171, 31);
             btnRegister.TabIndex = 8;
             btnRegister.Text = "Đăng ký";
             btnRegister.UseVisualStyleBackColor = true;

@@ -74,7 +74,7 @@
             btnMaximize.TabIndex = 2;
             btnMaximize.Text = "❐";
             btnMaximize.UseVisualStyleBackColor = false;
-            btnMaximize.Click += btnMaximize_Click;
+            btnMaximize.Click += btnMaximize_Click_1;
             // 
             // btnMinimize
             // 
@@ -87,7 +87,7 @@
             btnMinimize.TabIndex = 1;
             btnMinimize.Text = "-";
             btnMinimize.UseVisualStyleBackColor = false;
-            btnMinimize.Click += btnMinimize_Click;
+            btnMinimize.Click += btnMinimize_Click_1;
             // 
             // btnExit
             // 
@@ -99,7 +99,7 @@
             btnExit.TabIndex = 0;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = false;
-            btnExit.Click += btnExit_Click_1;
+            btnExit.Click += btnExit_Click_2;
             // 
             // panelCenter
             // 
@@ -115,7 +115,6 @@
             panelCenter.Name = "panelCenter";
             panelCenter.Size = new Size(543, 244);
             panelCenter.TabIndex = 1;
-            panelCenter.Paint += panelCenter_Paint;
             // 
             // lnkRegister
             // 
@@ -128,39 +127,40 @@
             lnkRegister.TabIndex = 7;
             lnkRegister.TabStop = true;
             lnkRegister.Text = "Chưa có tài khoản? Đăng ký";
-            lnkRegister.LinkClicked += lnkRegister_LinkClicked;
+            lnkRegister.LinkClicked += lnkRegister_LinkClicked_1;
             // 
             // lblError
             // 
             lblError.AutoSize = true;
+            lblError.Font = new Font("Cascadia Code", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblError.ForeColor = Color.Red;
-            lblError.Location = new Point(72, 116);
+            lblError.Location = new Point(25, 116);
             lblError.Name = "lblError";
-            lblError.Size = new Size(0, 24);
+            lblError.Size = new Size(0, 21);
             lblError.TabIndex = 6;
             // 
             // btnThoat
             // 
             btnThoat.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btnThoat.Location = new Point(386, 152);
+            btnThoat.Location = new Point(370, 152);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(120, 36);
+            btnThoat.Size = new Size(153, 36);
             btnThoat.TabIndex = 5;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = true;
-            btnThoat.Click += btnThoat_Click;
+            btnThoat.Click += btnThoat_Click_1;
             // 
             // btnDangNhap
             // 
             btnDangNhap.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnDangNhap.BackColor = Color.Peru;
-            btnDangNhap.Location = new Point(239, 152);
+            btnDangNhap.Location = new Point(201, 152);
             btnDangNhap.Name = "btnDangNhap";
-            btnDangNhap.Size = new Size(120, 36);
+            btnDangNhap.Size = new Size(163, 36);
             btnDangNhap.TabIndex = 4;
             btnDangNhap.Text = "Đăng Nhập";
             btnDangNhap.UseVisualStyleBackColor = false;
-            btnDangNhap.Click += btnDangNhap_Click;
+            btnDangNhap.Click += btnDangNhap_Click_1;
             // 
             // txtPassword
             // 

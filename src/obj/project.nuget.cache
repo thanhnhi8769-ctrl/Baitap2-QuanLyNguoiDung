@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h213tv+WxQw=",
+  "dgSpecHash": "aV3uz+jysjM=",
   "success": true,
-  "projectFilePath": "D:\\BaiTap2.2\\UserManagement\\UserManagement.csproj",
+  "projectFilePath": "D:\\BaiTap2.2\\src\\UserManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.18\\microsoft.bcl.cryptography.9.0.18.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.data.sqlclient\\7.1.1\\microsoft.data.sqlclient.7.1.1.nupkg.sha512",

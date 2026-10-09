@@ -1016,11 +1016,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BaiTap2.2\\UserManagement\\UserManagement.csproj",
+      "projectUniqueName": "D:\\BaiTap2.2\\src\\UserManagement.csproj",
       "projectName": "UserManagement",
-      "projectPath": "D:\\BaiTap2.2\\UserManagement\\UserManagement.csproj",
+      "projectPath": "D:\\BaiTap2.2\\src\\UserManagement.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "D:\\BaiTap2.2\\UserManagement\\obj\\",
+      "outputPath": "D:\\BaiTap2.2\\src\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
