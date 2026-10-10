@@ -74,6 +74,32 @@ namespace UserManagement
             {
                 lblLoginTime.Text += $"\n{DateTime.Now.ToString("dd/MM/yyyy HH:mm")}";
             }
+
+            // Cấu hình phím bấm tắt (AcceptButton / CancelButton)
+            if (btnLogout != null)
+            {
+                this.AcceptButton = btnLogout; // Nhấn Enter sẽ kích hoạt nút Đăng xuất
+            }
+
+            // Thiết lập thứ tự phím Tab chuẩn
+            SetupTabOrder();
+        }
+
+        /// <summary>
+        /// Cấu hình thứ tự phím Tab cho giao diện MainForm
+        /// </summary>
+        private void SetupTabOrder()
+        {
+            if (btnLogout != null)
+            {
+                btnLogout.TabStop = true;
+                btnLogout.TabIndex = 0;
+            }
+
+            // Tắt TabStop đối với các nút điều khiển cửa sổ góc trên để tránh trôi phím Tab
+            if (btnMinimize != null) btnMinimize.TabStop = false;
+            if (btnMaximize != null) btnMaximize.TabStop = false;
+            if (btnExit != null) btnExit.TabStop = false;
         }
 
         private void MainForm_Resize(object sender, EventArgs e)

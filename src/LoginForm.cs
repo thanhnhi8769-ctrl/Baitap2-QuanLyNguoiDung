@@ -27,8 +27,79 @@ namespace UserManagement
         private void LoginForm_Load(object sender, EventArgs e)
         {
             CenterPanel();
+
             // Đảm bảo nhãn lỗi trống khi form vừa tải
             if (lblError != null) lblError.Text = "";
+
+            // 1. Cấu hình phím Enter thực hiện thao tác đăng nhập
+            if (btnDangNhap != null)
+            {
+                this.AcceptButton = btnDangNhap;
+            }
+
+            // Gán sự kiện KeyDown cho các ô nhập liệu
+            if (txtTenDangNhap != null)
+            {
+                txtTenDangNhap.KeyDown -= InputBox_KeyDown; // Tránh gán trùng lặp
+                txtTenDangNhap.KeyDown += InputBox_KeyDown;
+            }
+
+            if (txtPassword != null)
+            {
+                txtPassword.KeyDown -= InputBox_KeyDown;
+                txtPassword.KeyDown += InputBox_KeyDown;
+            }
+
+            // 2. Cấu hình thứ tự phím Tab (TabIndex & TabStop)
+            SetupTabOrder();
+        }
+
+        /// <summary>
+        /// Thiết lập thứ tự di chuyển phím Tab đúng chuẩn UI/UX
+        /// </summary>
+        private void SetupTabOrder()
+        {
+            if (txtTenDangNhap != null)
+            {
+                txtTenDangNhap.TabStop = true;
+                txtTenDangNhap.TabIndex = 0;
+            }
+
+            if (txtPassword != null)
+            {
+                txtPassword.TabStop = true;
+                txtPassword.TabIndex = 1;
+            }
+
+            if (btnDangNhap != null)
+            {
+                btnDangNhap.TabStop = true;
+                btnDangNhap.TabIndex = 2;
+            }
+
+            if (lnkRegister != null)
+            {
+                lnkRegister.TabStop = true;
+                lnkRegister.TabIndex = 3;
+            }
+
+            // Tắt TabStop cho các nút đóng / thu nhỏ ở góc trên để phím Tab không bị nhảy nhầm
+            if (btnMinimize != null) btnMinimize.TabStop = false;
+            if (btnMaximize != null) btnMaximize.TabStop = false;
+            if (btnExit != null) btnExit.TabStop = false;
+            if (btnThoat != null) btnThoat.TabStop = false;
+        }
+
+        /// <summary>
+        /// Xử lý phím Enter khi người dùng gõ trong ô nhập liệu
+        /// </summary>
+        private void InputBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true; // Ngăn tiếng "beep" hệ thống khi nhấn Enter
+                btnDangNhap_Click_1(btnDangNhap, EventArgs.Empty);
+            }
         }
 
         private void LoginForm_Resize(object sender, EventArgs e)
@@ -90,24 +161,24 @@ namespace UserManagement
             // 1. Reset nhãn thông báo lỗi về trạng thái rỗng ban đầu để giữ cố định bố cục
             if (lblError != null) lblError.Text = "";
 
-            string tenDangNhap = txtTenDangNhap.Text.Trim();
-            string matKhau = txtPassword.Text.Trim();
+            string tenDangNhap = txtTenDangNhap != null ? txtTenDangNhap.Text.Trim() : "";
+            string matKhau = txtPassword != null ? txtPassword.Text.Trim() : "";
 
             if (string.IsNullOrEmpty(tenDangNhap))
             {
                 if (lblError != null) lblError.Text = "Vui lòng nhập tên đăng nhập!";
-                txtTenDangNhap.Focus();
+                if (txtTenDangNhap != null) txtTenDangNhap.Focus();
                 return;
             }
 
             if (string.IsNullOrEmpty(matKhau))
             {
                 if (lblError != null) lblError.Text = "Vui lòng nhập mật khẩu!";
-                txtPassword.Focus();
+                if (txtPassword != null) txtPassword.Focus();
                 return;
             }
 
-            // 2. Khóa nút và đổi nhãn thành "Đang xử lý..." theo Bước 6
+            // 2. Khóa nút và đổi nhãn thành "Đang xử lý..."
             Button btn = sender as Button;
             string originalText = btn != null ? btn.Text : "Đăng nhập";
             if (btn != null)
@@ -146,8 +217,11 @@ namespace UserManagement
                     if (lblError != null) lblError.Text = "Sai tên đăng nhập hoặc mật khẩu!";
 
                     // Xóa trắng ô mật khẩu và đưa con trỏ về đó để người dùng nhập lại
-                    txtPassword.Clear();
-                    txtPassword.Focus();
+                    if (txtPassword != null)
+                    {
+                        txtPassword.Clear();
+                        txtPassword.Focus();
+                    }
                 }
             }
             finally
@@ -193,7 +267,5 @@ namespace UserManagement
         private void panelCenter_Paint(object sender, PaintEventArgs e)
         {
         }
-
-        
     }
 }

@@ -33,6 +33,57 @@ namespace UserManagement
             if (lblErrorConfirm != null) lblErrorConfirm.Text = "";
             if (lblErrorHoTen != null) lblErrorHoTen.Text = "";
             if (lblErrorEmail != null) lblErrorEmail.Text = "";
+
+            // === BỔ SUNG: Cấu hình phím Enter và Tab Order ===
+            if (btnRegister != null)
+            {
+                this.AcceptButton = btnRegister;
+            }
+
+            // Gán sự kiện KeyDown bắt phím Enter cho các ô nhập liệu
+            Control[] inputControls = { txtUsername, txtPassword, txtConfirmPassword, txtHovaTen, txtEmail };
+            foreach (var ctrl in inputControls)
+            {
+                if (ctrl != null)
+                {
+                    ctrl.KeyDown -= InputBox_KeyDown;
+                    ctrl.KeyDown += InputBox_KeyDown;
+                }
+            }
+
+            // Thiết lập thứ tự Tab
+            SetupTabOrder();
+        }
+
+        /// <summary>
+        /// Cấu hình thứ tự phím Tab chuẩn UI/UX cho Form Đăng ký
+        /// </summary>
+        private void SetupTabOrder()
+        {
+            if (txtUsername != null) { txtUsername.TabStop = true; txtUsername.TabIndex = 0; }
+            if (txtPassword != null) { txtPassword.TabStop = true; txtPassword.TabIndex = 1; }
+            if (txtConfirmPassword != null) { txtConfirmPassword.TabStop = true; txtConfirmPassword.TabIndex = 2; }
+            if (txtHovaTen != null) { txtHovaTen.TabStop = true; txtHovaTen.TabIndex = 3; }
+            if (txtEmail != null) { txtEmail.TabStop = true; txtEmail.TabIndex = 4; }
+            if (btnRegister != null) { btnRegister.TabStop = true; btnRegister.TabIndex = 5; }
+            if (btnCancel != null) { btnCancel.TabStop = true; btnCancel.TabIndex = 6; }
+
+            // Tắt TabStop cho các nút điều khiển cửa sổ góc trên
+            if (btnMinimize != null) btnMinimize.TabStop = false;
+            if (btnMaximize != null) btnMaximize.TabStop = false;
+            if (btnExit != null) btnExit.TabStop = false;
+        }
+
+        /// <summary>
+        /// Xử lý phím Enter khi người dùng gõ trong các ô nhập liệu
+        /// </summary>
+        private void InputBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true; // Ngăn tiếng "beep" của hệ thống
+                btnRegister_Click_1(btnRegister, EventArgs.Empty);
+            }
         }
 
         private void RegisterForm_Resize(object sender, EventArgs e)
@@ -102,11 +153,11 @@ namespace UserManagement
 
         private void btnRegister_Click_1(object sender, EventArgs e)
         {
-            string username = txtUsername.Text.Trim();
-            string password = txtPassword.Text.Trim();
-            string confirmPassword = txtConfirmPassword.Text.Trim();
-            string hoten = txtHovaTen.Text.Trim();
-            string email = txtEmail.Text.Trim();
+            string username = txtUsername != null ? txtUsername.Text.Trim() : "";
+            string password = txtPassword != null ? txtPassword.Text.Trim() : "";
+            string confirmPassword = txtConfirmPassword != null ? txtConfirmPassword.Text.Trim() : "";
+            string hoten = txtHovaTen != null ? txtHovaTen.Text.Trim() : "";
+            string email = txtEmail != null ? txtEmail.Text.Trim() : "";
 
             // Reset tất cả nhãn lỗi về rỗng
             if (lblErrorUsername != null) lblErrorUsername.Text = "";
@@ -119,19 +170,19 @@ namespace UserManagement
             if (string.IsNullOrEmpty(username))
             {
                 if (lblErrorUsername != null) lblErrorUsername.Text = "Không được để trống";
-                txtUsername.Focus();
+                if (txtUsername != null) txtUsername.Focus();
                 return;
             }
             if (username.Length < 3 || username.Length > 20)
             {
                 if (lblErrorUsername != null) lblErrorUsername.Text = "Tên đăng nhập từ 3-20 ký tự";
-                txtUsername.Focus();
+                if (txtUsername != null) txtUsername.Focus();
                 return;
             }
             if (!System.Text.RegularExpressions.Regex.IsMatch(username, @"^[a-zA-Z0-9_]+$"))
             {
                 if (lblErrorUsername != null) lblErrorUsername.Text = "Chỉ gồm chữ, số và gạch dưới";
-                txtUsername.Focus();
+                if (txtUsername != null) txtUsername.Focus();
                 return;
             }
 
@@ -139,19 +190,19 @@ namespace UserManagement
             if (string.IsNullOrEmpty(password))
             {
                 if (lblErrorPassword != null) lblErrorPassword.Text = "Không được để trống";
-                txtPassword.Focus();
+                if (txtPassword != null) txtPassword.Focus();
                 return;
             }
             if (password.Length < 8)
             {
                 if (lblErrorPassword != null) lblErrorPassword.Text = "Mật khẩu tối thiểu 8 ký tự";
-                txtPassword.Focus();
+                if (txtPassword != null) txtPassword.Focus();
                 return;
             }
             if (!System.Text.RegularExpressions.Regex.IsMatch(password, @"[a-zA-Z]") || !System.Text.RegularExpressions.Regex.IsMatch(password, @"[0-9]"))
             {
                 if (lblErrorPassword != null) lblErrorPassword.Text = "Mật khẩu phải có cả chữ và số";
-                txtPassword.Focus();
+                if (txtPassword != null) txtPassword.Focus();
                 return;
             }
 
@@ -159,7 +210,7 @@ namespace UserManagement
             if (password != confirmPassword)
             {
                 if (lblErrorConfirm != null) lblErrorConfirm.Text = "Mật khẩu xác nhận không khớp";
-                txtConfirmPassword.Focus();
+                if (txtConfirmPassword != null) txtConfirmPassword.Focus();
                 return;
             }
 
@@ -167,13 +218,13 @@ namespace UserManagement
             if (string.IsNullOrEmpty(hoten))
             {
                 if (lblErrorHoTen != null) lblErrorHoTen.Text = "Không được để trống";
-                txtHovaTen.Focus();
+                if (txtHovaTen != null) txtHovaTen.Focus();
                 return;
             }
             if (hoten.Length < 2 || hoten.Length > 50)
             {
                 if (lblErrorHoTen != null) lblErrorHoTen.Text = "Họ tên từ 2-50 ký tự";
-                txtHovaTen.Focus();
+                if (txtHovaTen != null) txtHovaTen.Focus();
                 return;
             }
 
@@ -181,7 +232,7 @@ namespace UserManagement
             if (string.IsNullOrEmpty(email))
             {
                 if (lblErrorEmail != null) lblErrorEmail.Text = "Không được để trống";
-                txtEmail.Focus();
+                if (txtEmail != null) txtEmail.Focus();
                 return;
             }
             try
@@ -192,7 +243,7 @@ namespace UserManagement
             catch
             {
                 if (lblErrorEmail != null) lblErrorEmail.Text = "Email không đúng định dạng";
-                txtEmail.Focus();
+                if (txtEmail != null) txtEmail.Focus();
                 return;
             }
 
@@ -221,7 +272,7 @@ namespace UserManagement
                 else
                 {
                     if (lblErrorUsername != null) lblErrorUsername.Text = "Tên đăng nhập này đã tồn tại";
-                    txtUsername.Focus();
+                    if (txtUsername != null) txtUsername.Focus();
                 }
             }
             finally
