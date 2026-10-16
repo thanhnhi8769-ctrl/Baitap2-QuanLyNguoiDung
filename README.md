@@ -62,7 +62,7 @@ Cập nhật chuỗi kết nối (ChuoiKetNoi) trong file UserDAO.cs sao cho kh�
 
 Chạy ứng dụng:
 
-Mở file solution (.sln) bằng Visual Studio.
+Mở file solution (.slnx) bằng Visual Studio.
 
 Nhấn Ctrl + Shift + B để build lại toàn bộ project.
 
