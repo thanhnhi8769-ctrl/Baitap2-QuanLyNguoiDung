@@ -39,7 +39,7 @@ Baitap2-QuanLyNguoiDung/
 
 ### Clone dự án về máy:
 
-git clone https://github.com/thanhnhi8769-ctrl/Baitap2-QuanLyNguoiDung.git
+[Git clone](https://github.com/thanhnhi8769-ctrl/Baitap2-QuanLyNguoiDung.git)
 
 ### Cấu hình Cơ sở Dữ liệu:
 
