@@ -112,6 +112,7 @@
             // 
             // panelCenter
             // 
+            panelCenter.Anchor = AnchorStyles.None;
             panelCenter.BackColor = Color.SaddleBrown;
             panelCenter.Controls.Add(lblLoginTime);
             panelCenter.Controls.Add(lblEmail);

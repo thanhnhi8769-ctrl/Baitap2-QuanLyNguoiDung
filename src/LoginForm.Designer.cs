@@ -107,6 +107,7 @@
             // 
             // panelCenter
             // 
+            panelCenter.Anchor = AnchorStyles.None;
             panelCenter.Controls.Add(lblRegister);
             panelCenter.Controls.Add(btnThoat);
             panelCenter.Controls.Add(lblError);

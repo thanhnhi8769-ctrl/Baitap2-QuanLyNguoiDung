@@ -117,6 +117,7 @@
             // 
             // panelCenter
             // 
+            panelCenter.Anchor = AnchorStyles.None;
             panelCenter.BackColor = Color.SaddleBrown;
             panelCenter.Controls.Add(lblErrorHoTen);
             panelCenter.Controls.Add(txtHovaTen);
