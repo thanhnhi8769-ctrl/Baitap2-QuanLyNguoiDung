@@ -70,6 +70,7 @@
             btnMaximize.Name = "btnMaximize";
             btnMaximize.Size = new Size(47, 34);
             btnMaximize.TabIndex = 4;
+            btnMaximize.TabStop = false;
             btnMaximize.Text = "❐";
             btnMaximize.UseVisualStyleBackColor = false;
             btnMaximize.Click += btnMaximize_Click;
@@ -83,6 +84,7 @@
             btnMinimize.Name = "btnMinimize";
             btnMinimize.Size = new Size(47, 34);
             btnMinimize.TabIndex = 3;
+            btnMinimize.TabStop = false;
             btnMinimize.Text = "-";
             btnMinimize.UseVisualStyleBackColor = false;
             btnMinimize.Click += btnMinimize_Click_1;
@@ -96,6 +98,7 @@
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(47, 34);
             btnExit.TabIndex = 2;
+            btnExit.TabStop = false;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click;
@@ -154,7 +157,7 @@
             txtHovaTen.Location = new Point(231, 221);
             txtHovaTen.Name = "txtHovaTen";
             txtHovaTen.Size = new Size(238, 28);
-            txtHovaTen.TabIndex = 15;
+            txtHovaTen.TabIndex = 4;
             // 
             // label6
             // 
@@ -209,7 +212,7 @@
             btnCancel.Location = new Point(321, 345);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(165, 31);
-            btnCancel.TabIndex = 9;
+            btnCancel.TabIndex = 7;
             btnCancel.Text = "Huỷ";
             btnCancel.UseVisualStyleBackColor = true;
             btnCancel.Click += btnCancel_Click;
@@ -219,7 +222,7 @@
             btnRegister.Location = new Point(144, 345);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(171, 31);
-            btnRegister.TabIndex = 8;
+            btnRegister.TabIndex = 6;
             btnRegister.Text = "Đăng ký";
             btnRegister.UseVisualStyleBackColor = true;
             btnRegister.Click += btnRegister_Click_1;
@@ -230,7 +233,7 @@
             txtEmail.Location = new Point(231, 293);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(238, 28);
-            txtEmail.TabIndex = 7;
+            txtEmail.TabIndex = 5;
             // 
             // txtConfirmPassword
             // 
@@ -238,7 +241,7 @@
             txtConfirmPassword.Location = new Point(231, 155);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.Size = new Size(238, 28);
-            txtConfirmPassword.TabIndex = 6;
+            txtConfirmPassword.TabIndex = 3;
             txtConfirmPassword.UseSystemPasswordChar = true;
             // 
             // txtPassword
@@ -247,7 +250,7 @@
             txtPassword.Location = new Point(231, 87);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(238, 28);
-            txtPassword.TabIndex = 5;
+            txtPassword.TabIndex = 2;
             txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
@@ -256,7 +259,7 @@
             txtUsername.Location = new Point(231, 16);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(238, 28);
-            txtUsername.TabIndex = 4;
+            txtUsername.TabIndex = 1;
             // 
             // label5
             // 

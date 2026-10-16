@@ -26,14 +26,15 @@
             btnMinimize = new Button();
             btnExit = new Button();
             panelCenter = new Panel();
-            lnkRegister = new LinkLabel();
-            lblError = new Label();
+            lblRegister = new LinkLabel();
             btnThoat = new Button();
+            lblError = new Label();
             btnDangNhap = new Button();
             txtPassword = new TextBox();
             txtTenDangNhap = new TextBox();
             label3 = new Label();
             label2 = new Label();
+            lnkRegister = new LinkLabel();
             panel1.SuspendLayout();
             panelCenter.SuspendLayout();
             SuspendLayout();
@@ -72,6 +73,7 @@
             btnMaximize.Name = "btnMaximize";
             btnMaximize.Size = new Size(41, 33);
             btnMaximize.TabIndex = 2;
+            btnMaximize.TabStop = false;
             btnMaximize.Text = "❐";
             btnMaximize.UseVisualStyleBackColor = false;
             btnMaximize.Click += btnMaximize_Click_1;
@@ -85,6 +87,7 @@
             btnMinimize.Name = "btnMinimize";
             btnMinimize.Size = new Size(41, 33);
             btnMinimize.TabIndex = 1;
+            btnMinimize.TabStop = false;
             btnMinimize.Text = "-";
             btnMinimize.UseVisualStyleBackColor = false;
             btnMinimize.Click += btnMinimize_Click_1;
@@ -97,15 +100,16 @@
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(41, 33);
             btnExit.TabIndex = 0;
+            btnExit.TabStop = false;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click_2;
             // 
             // panelCenter
             // 
-            panelCenter.Controls.Add(lnkRegister);
-            panelCenter.Controls.Add(lblError);
+            panelCenter.Controls.Add(lblRegister);
             panelCenter.Controls.Add(btnThoat);
+            panelCenter.Controls.Add(lblError);
             panelCenter.Controls.Add(btnDangNhap);
             panelCenter.Controls.Add(txtPassword);
             panelCenter.Controls.Add(txtTenDangNhap);
@@ -114,20 +118,31 @@
             panelCenter.Location = new Point(162, 109);
             panelCenter.Name = "panelCenter";
             panelCenter.Size = new Size(543, 244);
-            panelCenter.TabIndex = 1;
+            panelCenter.TabIndex = 5;
             // 
-            // lnkRegister
+            // lblRegister
             // 
-            lnkRegister.AutoSize = true;
-            lnkRegister.ForeColor = Color.NavajoWhite;
-            lnkRegister.LinkColor = Color.NavajoWhite;
-            lnkRegister.Location = new Point(144, 203);
-            lnkRegister.Name = "lnkRegister";
-            lnkRegister.Size = new Size(296, 24);
-            lnkRegister.TabIndex = 7;
-            lnkRegister.TabStop = true;
-            lnkRegister.Text = "Chưa có tài khoản? Đăng ký";
-            lnkRegister.LinkClicked += lnkRegister_LinkClicked_1;
+            lblRegister.AutoSize = true;
+            lblRegister.ForeColor = Color.Chocolate;
+            lblRegister.LinkColor = Color.NavajoWhite;
+            lblRegister.Location = new Point(162, 210);
+            lblRegister.Name = "lblRegister";
+            lblRegister.Size = new Size(296, 24);
+            lblRegister.TabIndex = 10;
+            lblRegister.TabStop = true;
+            lblRegister.Text = "Chưa có tài khoản? Đăng kí";
+            lblRegister.LinkClicked += lnkRegister_LinkClicked_1;
+            // 
+            // btnThoat
+            // 
+            btnThoat.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnThoat.BackColor = Color.Peru;
+            btnThoat.Location = new Point(370, 152);
+            btnThoat.Name = "btnThoat";
+            btnThoat.Size = new Size(163, 36);
+            btnThoat.TabIndex = 9;
+            btnThoat.Text = "Thoát";
+            btnThoat.UseVisualStyleBackColor = false;
             // 
             // lblError
             // 
@@ -139,17 +154,6 @@
             lblError.Size = new Size(0, 21);
             lblError.TabIndex = 6;
             // 
-            // btnThoat
-            // 
-            btnThoat.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btnThoat.Location = new Point(370, 152);
-            btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(153, 36);
-            btnThoat.TabIndex = 5;
-            btnThoat.Text = "Thoát";
-            btnThoat.UseVisualStyleBackColor = true;
-            btnThoat.Click += btnThoat_Click_1;
-            // 
             // btnDangNhap
             // 
             btnDangNhap.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -157,7 +161,7 @@
             btnDangNhap.Location = new Point(201, 152);
             btnDangNhap.Name = "btnDangNhap";
             btnDangNhap.Size = new Size(163, 36);
-            btnDangNhap.TabIndex = 4;
+            btnDangNhap.TabIndex = 2;
             btnDangNhap.Text = "Đăng Nhập";
             btnDangNhap.UseVisualStyleBackColor = false;
             btnDangNhap.Click += btnDangNhap_Click_1;
@@ -169,7 +173,7 @@
             txtPassword.Location = new Point(184, 64);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(339, 28);
-            txtPassword.TabIndex = 3;
+            txtPassword.TabIndex = 1;
             txtPassword.UseSystemPasswordChar = true;
             // 
             // txtTenDangNhap
@@ -179,7 +183,7 @@
             txtTenDangNhap.Location = new Point(184, 26);
             txtTenDangNhap.Name = "txtTenDangNhap";
             txtTenDangNhap.Size = new Size(339, 28);
-            txtTenDangNhap.TabIndex = 2;
+            txtTenDangNhap.TabIndex = 0;
             // 
             // label3
             // 
@@ -203,6 +207,17 @@
             label2.TabIndex = 0;
             label2.Text = "Tên đăng nhập";
             // 
+            // lnkRegister
+            // 
+            lnkRegister.AutoSize = true;
+            lnkRegister.ForeColor = Color.NavajoWhite;
+            lnkRegister.LinkColor = Color.NavajoWhite;
+            lnkRegister.Location = new Point(324, 356);
+            lnkRegister.Name = "lnkRegister";
+            lnkRegister.Size = new Size(0, 24);
+            lnkRegister.TabIndex = 4;
+            lnkRegister.LinkClicked += lnkRegister_LinkClicked_1;
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(11F, 24F);
@@ -213,6 +228,7 @@
             ClientSize = new Size(880, 432);
             Controls.Add(panelCenter);
             Controls.Add(panel1);
+            Controls.Add(lnkRegister);
             DoubleBuffered = true;
             Font = new Font("Cascadia Code", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ForeColor = Color.SaddleBrown;
@@ -225,6 +241,7 @@
             panelCenter.ResumeLayout(false);
             panelCenter.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -237,11 +254,12 @@
         private Panel panelCenter;
         private Label label2;
         private Label label3;
-        private Button btnThoat;
         private Button btnDangNhap;
         private TextBox txtPassword;
         private TextBox txtTenDangNhap;
         private Label lblError;
         private LinkLabel lnkRegister;
+        private Button btnThoat;
+        private LinkLabel lblRegister;
     }
 }

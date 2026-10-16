@@ -27,6 +27,17 @@ namespace UserManagement
         private void LoginForm_Load(object sender, EventArgs e)
         {
             CenterPanel();
+            txtTenDangNhap.TabStop = true;
+            txtPassword.TabStop = true;
+            btnDangNhap.TabStop = true;
+            btnThoat.TabStop = true;
+
+            // Gán thứ tự TabIndex chuẩn
+            txtTenDangNhap.TabIndex = 0;
+            txtPassword.TabIndex = 1;
+            btnDangNhap.TabIndex = 2;
+            btnThoat.TabIndex = 3;
+            lnkRegister.TabIndex = 4; 
 
             // Đảm bảo nhãn lỗi trống khi form vừa tải
             if (lblError != null) lblError.Text = "";
@@ -77,18 +88,26 @@ namespace UserManagement
                 btnDangNhap.TabIndex = 2;
             }
 
+            // ĐÃ SỬA: Cho phép nút Thoát nhận phím Tab và đặt vị trí số 3
+            if (btnThoat != null)
+            {
+                btnThoat.TabStop = true;
+                btnThoat.TabIndex = 3;
+            }
+
             if (lnkRegister != null)
             {
                 lnkRegister.TabStop = true;
-                lnkRegister.TabIndex = 3;
+                lnkRegister.TabIndex = 4; // Dời nút đăng ký xuống số 4
             }
 
-            // Tắt TabStop cho các nút đóng / thu nhỏ ở góc trên để phím Tab không bị nhảy nhầm
+            // Các nút thu nhỏ / phóng to / đóng cửa sổ ở góc trên vẫn giữ nguyên tắt TabStop
             if (btnMinimize != null) btnMinimize.TabStop = false;
             if (btnMaximize != null) btnMaximize.TabStop = false;
             if (btnExit != null) btnExit.TabStop = false;
-            if (btnThoat != null) btnThoat.TabStop = false;
         }
+
+          
 
         /// <summary>
         /// Xử lý phím Enter khi người dùng gõ trong ô nhập liệu

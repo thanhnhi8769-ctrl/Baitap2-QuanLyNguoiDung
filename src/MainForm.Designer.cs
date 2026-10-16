@@ -79,6 +79,7 @@
             btnMinimize.Name = "btnMinimize";
             btnMinimize.Size = new Size(44, 33);
             btnMinimize.TabIndex = 3;
+            btnMinimize.TabStop = false;
             btnMinimize.Text = "-";
             btnMinimize.UseVisualStyleBackColor = false;
             btnMinimize.Click += btnMinimize_Click_1;
@@ -91,6 +92,7 @@
             btnMaximize.Name = "btnMaximize";
             btnMaximize.Size = new Size(44, 33);
             btnMaximize.TabIndex = 2;
+            btnMaximize.TabStop = false;
             btnMaximize.Text = "❐";
             btnMaximize.UseVisualStyleBackColor = false;
             btnMaximize.Click += btnMaximize_Click_1;
@@ -103,6 +105,7 @@
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(44, 33);
             btnExit.TabIndex = 1;
+            btnExit.TabStop = false;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = false;
             btnExit.Click += btnExit_Click_1;
@@ -177,7 +180,7 @@
             btnLogout.Location = new Point(325, 210);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(140, 34);
-            btnLogout.TabIndex = 3;
+            btnLogout.TabIndex = 0;
             btnLogout.Text = "Đăng xuất";
             btnLogout.UseVisualStyleBackColor = true;
             btnLogout.Click += btnLogout_Click_1;
