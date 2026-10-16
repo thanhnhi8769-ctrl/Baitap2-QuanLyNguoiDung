@@ -40,8 +40,11 @@ Cố định nhãn thông báo lỗi ở trạng thái rỗng để giữ ổn �
 
 Baitap2-QuanLyNguoiDung/
 │
+
 ├── database/          # Script tạo cơ sở dữ liệu và bảng dữ liệu SQL
+
 ├── docs/              # Tài liệu hướng dẫn và thiết kế giao diện
+
 └── src/               # Mã nguồn chính của dự án C# Windows Forms
 
 
