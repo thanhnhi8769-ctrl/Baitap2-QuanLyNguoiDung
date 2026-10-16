@@ -144,6 +144,7 @@
             btnThoat.TabIndex = 9;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = false;
+            btnThoat.Click += btnThoat_Click;
             // 
             // lblError
             // 

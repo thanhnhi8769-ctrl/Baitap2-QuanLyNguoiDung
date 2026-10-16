@@ -169,6 +169,13 @@ namespace UserManagement
 
         private void btnLogout_Click_1(object sender, EventArgs e)
         {
+            Button btn = sender as Button;
+            string originalText = btn != null ? btn.Text : "Đăng nhập";
+            if (btn != null)
+            {
+                btn.Enabled = false;
+                btn.Text = "Đang xử lý...";
+            }
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
@@ -176,6 +183,18 @@ namespace UserManagement
                 LoginForm loginForm = new LoginForm();
                 loginForm.ShowDialog();
                 this.Close();
+            }
+
+            
+            {
+                // Mở khóa nút lại sau khi xử lý xong
+                if (btn != null)
+                {
+                    btn.Enabled = true;
+                    btn.Text = originalText;
+                }
+
+
             }
         }
 

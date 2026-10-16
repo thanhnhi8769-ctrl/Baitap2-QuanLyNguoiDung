@@ -37,7 +37,7 @@ namespace UserManagement
             txtPassword.TabIndex = 1;
             btnDangNhap.TabIndex = 2;
             btnThoat.TabIndex = 3;
-            lnkRegister.TabIndex = 4; 
+            lnkRegister.TabIndex = 4;
 
             // Đảm bảo nhãn lỗi trống khi form vừa tải
             if (lblError != null) lblError.Text = "";
@@ -107,7 +107,7 @@ namespace UserManagement
             if (btnExit != null) btnExit.TabStop = false;
         }
 
-          
+
 
         /// <summary>
         /// Xử lý phím Enter khi người dùng gõ trong ô nhập liệu
@@ -285,6 +285,11 @@ namespace UserManagement
 
         private void panelCenter_Paint(object sender, PaintEventArgs e)
         {
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -178,9 +178,9 @@
             // 
             // btnLogout
             // 
-            btnLogout.Location = new Point(325, 210);
+            btnLogout.Location = new Point(277, 210);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(140, 34);
+            btnLogout.Size = new Size(188, 34);
             btnLogout.TabIndex = 0;
             btnLogout.Text = "Đăng xuất";
             btnLogout.UseVisualStyleBackColor = true;
