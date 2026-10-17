@@ -231,6 +231,7 @@
             ForeColor = Color.SaddleBrown;
             FormBorderStyle = FormBorderStyle.None;
             Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MainForm";
             Load += MainForm_Load;
             panel1.ResumeLayout(false);

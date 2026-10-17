@@ -291,5 +291,28 @@ namespace UserManagement
         {
             Application.Exit();
         }
+
+        private void txtTenDangNhap_TextChanged(object sender, EventArgs e)
+        {
+            lblError.Text = "";
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            lblError.Text = "";
+
+        }
+
+        private void txtTenDangNhap_Click(object sender, EventArgs e)
+        {
+            lblError.Text = "";
+
+        }
+
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            lblError.Text = "";
+
+        }
     }
 }

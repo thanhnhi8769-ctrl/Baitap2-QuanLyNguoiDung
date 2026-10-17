@@ -300,5 +300,71 @@ namespace UserManagement
         private void RegisterForm_Load_1(object sender, EventArgs e)
         {
         }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            lblErrorUsername.Text = "";
+
+        }
+
+        private void txtUsername_Click(object sender, EventArgs e)
+        {
+            lblErrorUsername.Text = "";
+
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            lblErrorPassword.Text = "";
+
+        }
+
+        private void txtPassword_Click(object sender, EventArgs e)
+        {
+            lblErrorPassword.Text = "";
+
+        }
+
+        private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
+        {
+            lblErrorConfirm.Text = "";
+
+        }
+
+        private void txtConfirmPassword_Click(object sender, EventArgs e)
+        {
+            lblErrorConfirm.Text = "";
+
+        }
+
+        private void txtHovaTen_TextChanged(object sender, EventArgs e)
+        {
+            lblErrorHoTen.Text = "";
+
+        }
+
+        private void txtHovaTen_Click(object sender, EventArgs e)
+        {
+            lblErrorHoTen.Text = "";
+
+        }
+
+        private void lblErrorEmail_Click(object sender, EventArgs e)
+        {
+            lblErrorEmail.Text = "";
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            lblErrorEmail.Text = "";
+
+        }
+
+        private void txtEmail_Click(object sender, EventArgs e)
+        {
+            lblErrorEmail.Text = "";
+
+        }
     }
 }

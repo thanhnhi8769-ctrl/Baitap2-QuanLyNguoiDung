@@ -51,6 +51,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(957, 38);
             panel1.TabIndex = 0;
+            panel1.MouseDoubleClick += Panel1_MouseDown;
             // 
             // label1
             // 
@@ -177,6 +178,8 @@
             txtPassword.Size = new Size(339, 28);
             txtPassword.TabIndex = 1;
             txtPassword.UseSystemPasswordChar = true;
+            txtPassword.Click += txtPassword_Click;
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // txtTenDangNhap
             // 
@@ -186,6 +189,8 @@
             txtTenDangNhap.Name = "txtTenDangNhap";
             txtTenDangNhap.Size = new Size(339, 28);
             txtTenDangNhap.TabIndex = 0;
+            txtTenDangNhap.Click += txtTenDangNhap_Click;
+            txtTenDangNhap.TextChanged += txtTenDangNhap_TextChanged;
             // 
             // label3
             // 
@@ -236,6 +241,7 @@
             ForeColor = Color.SaddleBrown;
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
             Load += LoginForm_Load;
             panel1.ResumeLayout(false);

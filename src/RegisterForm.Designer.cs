@@ -159,6 +159,8 @@
             txtHovaTen.Name = "txtHovaTen";
             txtHovaTen.Size = new Size(238, 28);
             txtHovaTen.TabIndex = 4;
+            txtHovaTen.Click += txtHovaTen_Click;
+            txtHovaTen.TextChanged += txtHovaTen_TextChanged;
             // 
             // label6
             // 
@@ -180,6 +182,7 @@
             lblErrorEmail.Name = "lblErrorEmail";
             lblErrorEmail.Size = new Size(0, 24);
             lblErrorEmail.TabIndex = 13;
+            lblErrorEmail.Click += lblErrorEmail_Click;
             // 
             // lblErrorConfirm
             // 
@@ -235,6 +238,8 @@
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(238, 28);
             txtEmail.TabIndex = 5;
+            txtEmail.Click += txtEmail_Click;
+            txtEmail.TextChanged += txtEmail_TextChanged;
             // 
             // txtConfirmPassword
             // 
@@ -244,6 +249,8 @@
             txtConfirmPassword.Size = new Size(238, 28);
             txtConfirmPassword.TabIndex = 3;
             txtConfirmPassword.UseSystemPasswordChar = true;
+            txtConfirmPassword.Click += txtConfirmPassword_Click;
+            txtConfirmPassword.TextChanged += txtConfirmPassword_TextChanged;
             // 
             // txtPassword
             // 
@@ -253,6 +260,8 @@
             txtPassword.Size = new Size(238, 28);
             txtPassword.TabIndex = 2;
             txtPassword.UseSystemPasswordChar = true;
+            txtPassword.Click += txtPassword_Click;
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // txtUsername
             // 
@@ -261,6 +270,8 @@
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(238, 28);
             txtUsername.TabIndex = 1;
+            txtUsername.Click += txtUsername_Click;
+            txtUsername.TextChanged += txtUsername_TextChanged;
             // 
             // label5
             // 
@@ -325,6 +336,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "RegisterForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RegisterForm";
             Load += RegisterForm_Load_1;
             panel1.ResumeLayout(false);
