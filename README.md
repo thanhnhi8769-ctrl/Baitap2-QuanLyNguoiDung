@@ -57,3 +57,7 @@
 
 > [!CAUTION]
 > 🔴 **Lưu ý:** Khối này màu đỏ.
+
+<div align="center">
+  <img src="D:\NT106\lab2\git.jpg" alt="Banner Dự Án" width="100%" />
+</div>
