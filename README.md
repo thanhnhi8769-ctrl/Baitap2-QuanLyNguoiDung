@@ -26,6 +26,7 @@
 ---
 
 ## ✨ Tính Năng Chính
+### 🔐 Đăng nhập hệ thống
 
 ### 🔐 1. Đăng nhập hệ thống
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
@@ -37,3 +38,8 @@
 ### 👤 2. Quản lý tài khoản *(Thêm các tính năng khác của bạn vào đây)*
 - [ ] Thêm, sửa, xóa người dùng.
 - [ ] Phân quyền người dùng (Admin, User).
+
+> [!IMPORTANT]
+> - **Xác thực tài khoản** với mật khẩu được băm an toàn (sử dụng Salt và PBKDF2).
+> - **Tự động cập nhật** thời gian đăng nhập cuối (LanDangNhapCuoi) vào cơ sở dữ liệu khi đăng nhập thành công.
+> - **Xử lý giao diện mượt mà:** Khóa nút khi đang xử lý, tự động xóa trắng ô mật khẩu và đưa con trỏ chuột về ô tài khoản nếu nhập sai.
