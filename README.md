@@ -61,15 +61,3 @@
 <div align="center">
   <img src="git.jpg" alt="Banner Dự Án" width="100%" />
 </div>
-```bash
-$ whoami
-> Student @ UIT | Computer Networks & Data Communication
-
-$ cat skills.json
-{
-  "languages": ["C++", "C#", "Python", "MIPS Assembly"],
-  "tools": ["Wireshark", "VirtualBox", "JupyterLab", "VS Code"],
-  "interests": ["Network Analysis", "Cloud Security", "Algorithm"]
-}
-
-$ System.exit()
