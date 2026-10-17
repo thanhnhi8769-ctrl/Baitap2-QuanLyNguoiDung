@@ -20,16 +20,14 @@
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </div>
 
-<div align="center">
-  <img src="vidxe.mp4" alt="video xe scooter" width="100%" />
-</div>
-
-
 <br>
 
 - **Cơ sở dữ liệu:** Cấu hình qua thư viện `Microsoft.Data.SqlClient`
 - **Kiến trúc phần mềm:** Mô hình 3 lớp (Data Access Layer - DAO, BLL, UI)
-
+---
+<div align="center">
+  <img src="vidxe.mp4" alt="video xe scooter" width="100%" />
+</div>
 ---
 
 ## ✨ Tính Năng Chính
