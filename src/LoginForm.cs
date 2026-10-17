@@ -220,11 +220,7 @@ namespace UserManagement
                 }
                 else
                 {
-<<<<<<< HEAD
-                    // Xóa ô mật khẩu trước
-=======
                     if (lblError != null) lblError.Text = "Sai tên đăng nhập hoặc mật khẩu!";
->>>>>>> 20a24a6 (update)
                     if (txtPassword != null)
                     {
                         txtPassword.Clear();
