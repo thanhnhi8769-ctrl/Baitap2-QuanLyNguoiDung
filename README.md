@@ -24,14 +24,12 @@
 
 - **Cơ sở dữ liệu:** Cấu hình qua thư viện `Microsoft.Data.SqlClient`
 - **Kiến trúc phần mềm:** Mô hình 3 lớp (Data Access Layer - DAO, BLL, UI)
----
+
 <div align="center">
   <video src="vidxe.mp4" controls width="100%"></video>
 </div>
 
-
-
-
+---
 
 ## ✨ Tính Năng Chính
 ### 🔐 Đăng nhập hệ thống
