@@ -232,14 +232,20 @@ namespace UserManagement
                 }
                 else
                 {
-                    // Hiển thị lỗi chung theo test case
-                    if (lblError != null) lblError.Text = "Sai tên đăng nhập hoặc mật khẩu!";
-
-                    // Xóa trắng ô mật khẩu và đưa con trỏ về đó để người dùng nhập lại
+                    // Xóa ô mật khẩu trước
                     if (txtPassword != null)
                     {
                         txtPassword.Clear();
                         txtPassword.Focus();
+                    }
+
+                     // Hiển thị thông báo lỗi màu đỏ sau khi xóa mật khẩu
+                     if (lblError != null)
+                     {
+                         lblError.Text = "Sai tên đăng nhập hoặc mật khẩu!";
+                         lblError.ForeColor = Color.Red;
+                         lblError.Visible = true;
+                         lblError.BringToFront();
                     }
                 }
             }
