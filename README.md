@@ -26,8 +26,11 @@
 - **Kiến trúc phần mềm:** Mô hình 3 lớp (Data Access Layer - DAO, BLL, UI)
 ---
 <div align="center">
-  <img src="vidxe.mp4" alt="video xe scooter" width="100%" />
+  <video src="vidxe.mp4" controls width="100%"></video>
 </div>
+
+
+
 
 
 ## ✨ Tính Năng Chính
