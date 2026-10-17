@@ -43,3 +43,17 @@
 > - **Xác thực tài khoản** với mật khẩu được băm an toàn (sử dụng Salt và PBKDF2).
 > - **Tự động cập nhật** thời gian đăng nhập cuối (LanDangNhapCuoi) vào cơ sở dữ liệu khi đăng nhập thành công.
 > - **Xử lý giao diện mượt mà:** Khóa nút khi đang xử lý, tự động xóa trắng ô mật khẩu và đưa con trỏ chuột về ô tài khoản nếu nhập sai.
+> [!NOTE]
+> 🔵 **Ghi chú:** Khối này sẽ có viền và màu nền xanh dương nhạt. Rất hợp để viết lời giới thiệu.
+
+> [!TIP]
+> 🟢 **Mẹo:** Khối này có màu xanh lá cây.
+
+> [!IMPORTANT]
+> 🟣 **Quan trọng:** Khối này màu tím, dùng để nhấn mạnh tính năng cốt lõi.
+
+> [!WARNING]
+> 🟡 **Cảnh báo:** Khối này màu vàng, thu hút sự chú ý.
+
+> [!CAUTION]
+> 🔴 **Lưu ý:** Khối này màu đỏ.
