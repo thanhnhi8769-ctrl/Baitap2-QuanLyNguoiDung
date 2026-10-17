@@ -15,9 +15,10 @@ namespace UserManagement
         private Point dragCursorPoint;
         private Point dragFormPoint;
 
-        public MainForm()
+        public MainForm(FormWindowState state = FormWindowState.Normal)
         {
             InitializeComponent();
+            this.WindowState = state;
 
             if (panel1 != null)
             {
@@ -27,7 +28,8 @@ namespace UserManagement
             }
         }
 
-        public MainForm(string user, string name, string mail, string time) : this()
+        public MainForm(string user, string name, string mail, string time, FormWindowState state = FormWindowState.Normal)
+            : this(state)
         {
             tenDangNhap = user;
             hoTen = name;
@@ -75,19 +77,14 @@ namespace UserManagement
                 lblLoginTime.Text += $"\n{DateTime.Now.ToString("dd/MM/yyyy HH:mm")}";
             }
 
-            // Cấu hình phím bấm tắt (AcceptButton / CancelButton)
             if (btnLogout != null)
             {
-                this.AcceptButton = btnLogout; // Nhấn Enter sẽ kích hoạt nút Đăng xuất
+                this.AcceptButton = btnLogout;
             }
 
-            // Thiết lập thứ tự phím Tab chuẩn
             SetupTabOrder();
         }
 
-        /// <summary>
-        /// Cấu hình thứ tự phím Tab cho giao diện MainForm
-        /// </summary>
         private void SetupTabOrder()
         {
             if (btnLogout != null)
@@ -96,7 +93,6 @@ namespace UserManagement
                 btnLogout.TabIndex = 0;
             }
 
-            // Tắt TabStop đối với các nút điều khiển cửa sổ góc trên để tránh trôi phím Tab
             if (btnMinimize != null) btnMinimize.TabStop = false;
             if (btnMaximize != null) btnMaximize.TabStop = false;
             if (btnExit != null) btnExit.TabStop = false;
@@ -130,7 +126,7 @@ namespace UserManagement
 
         private void Panel1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (dragging)
+            if (dragging && this.WindowState == FormWindowState.Normal)
             {
                 Point diff = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
                 this.Location = Point.Add(dragFormPoint, new Size(diff));
@@ -160,6 +156,7 @@ namespace UserManagement
             {
                 this.WindowState = FormWindowState.Normal;
             }
+            CenterPanel();
         }
 
         private void btnExit_Click_1(object sender, EventArgs e)
@@ -170,40 +167,33 @@ namespace UserManagement
         private void btnLogout_Click_1(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            string originalText = btn != null ? btn.Text : "Đăng nhập";
+            string originalText = btn != null ? btn.Text : "Đăng xuất";
             if (btn != null)
             {
                 btn.Enabled = false;
                 btn.Text = "Đang xử lý...";
             }
+
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 this.Hide();
-                LoginForm loginForm = new LoginForm();
+                // Truyền WindowState hiện tại về LoginForm khi Đăng xuất
+                LoginForm loginForm = new LoginForm(this.WindowState);
                 loginForm.ShowDialog();
                 this.Close();
             }
-
-            
+            else
             {
-                // Mở khóa nút lại sau khi xử lý xong
                 if (btn != null)
                 {
                     btn.Enabled = true;
                     btn.Text = originalText;
                 }
-
-
             }
         }
 
-        private void panelCenter_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
+        private void panelCenter_Paint(object sender, PaintEventArgs e) { }
+        private void label2_Click(object sender, EventArgs e) { }
     }
 }

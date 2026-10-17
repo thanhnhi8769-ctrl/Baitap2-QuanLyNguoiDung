@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "D:\\BaiTap2.2\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\dataaccess\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:dataaccess\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|D:\\BaiTap2.2\\src\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\usermanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:usermanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|D:\\BaiTap2.2\\src\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|D:\\BaiTap2.2\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A179D883-4731-493A-8341-FBD50CF10EA8}|UserManagement.csproj|D:\\BaiTap2.2\\src\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A179D883-4731-493A-8341-FBD50CF10EA8}|UserManagement.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\dataaccess\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:dataaccess\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:usermanagement.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\usermanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:usermanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|d:\\baitap2.2\\src\\registerform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{CE1243C8-9440-3A4D-49EF-6046D469FB99}|UserManagement.csproj|solutionrelative:registerform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
@@ -78,11 +78,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "UserDAO.cs",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\DataAccess\\UserDAO.cs",
               "RelativeDocumentMoniker": "DataAccess\\UserDAO.cs",
@@ -91,19 +91,8 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-09T14:23:37.124Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "D:\\BaiTap2.2\\src\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "D:\\BaiTap2.2\\src\\MainForm.cs [Design]",
-              "RelativeToolTip": "MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-09T01:06:51.176Z",
-              "EditorCaption": " [Design]"
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -111,34 +100,35 @@
               "Title": "LoginForm.cs",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\LoginForm.cs",
               "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "D:\\BaiTap2.2\\src\\LoginForm.cs",
-              "RelativeToolTip": "LoginForm.cs",
-              "ViewState": "AgIAADABAAAAAAAAAADwvzoBAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\BaiTap2.2\\src\\LoginForm.cs*",
+              "RelativeToolTip": "LoginForm.cs*",
+              "ViewState": "AgIAABUBAAAAAAAAAAAkwCsBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-08T19:45:54.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegisterForm.cs [Design]",
-              "DocumentMoniker": "D:\\BaiTap2.2\\src\\RegisterForm.cs",
-              "RelativeDocumentMoniker": "RegisterForm.cs",
-              "ToolTip": "D:\\BaiTap2.2\\src\\RegisterForm.cs [Design]",
-              "RelativeToolTip": "RegisterForm.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\BaiTap2.2\\src\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\BaiTap2.2\\src\\MainForm.cs*",
+              "RelativeToolTip": "MainForm.cs*",
+              "ViewState": "AgIAALAAAAAAAAAAAAAkwMYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T03:52:23.843Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-10-09T02:34:00.106Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RegisterForm.cs",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\RegisterForm.cs",
               "RelativeDocumentMoniker": "RegisterForm.cs",
-              "ToolTip": "D:\\BaiTap2.2\\src\\RegisterForm.cs",
-              "RelativeToolTip": "RegisterForm.cs",
-              "ViewState": "AgIAAGQBAAAAAAAAAADwv24BAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\BaiTap2.2\\src\\RegisterForm.cs*",
+              "RelativeToolTip": "RegisterForm.cs*",
+              "ViewState": "AgIAABMBAAAAAAAAAAAkwCkBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T05:51:33.054Z",
               "EditorCaption": ""
@@ -149,27 +139,52 @@
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\LoginForm.cs",
               "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "D:\\BaiTap2.2\\src\\LoginForm.cs [Design]",
-              "RelativeToolTip": "LoginForm.cs [Design]",
+              "ToolTip": "D:\\BaiTap2.2\\src\\LoginForm.cs [Design]*",
+              "RelativeToolTip": "LoginForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-17T06:02:06.344Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\BaiTap2.2\\src\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "D:\\BaiTap2.2\\src\\MainForm.cs",
-              "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAkwLsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-09T02:34:00.106Z"
+              "DocumentIndex": 5,
+              "Title": "UserManagement.csproj",
+              "DocumentMoniker": "D:\\BaiTap2.2\\src\\UserManagement.csproj",
+              "RelativeDocumentMoniker": "UserManagement.csproj",
+              "ToolTip": "D:\\BaiTap2.2\\src\\UserManagement.csproj",
+              "RelativeToolTip": "UserManagement.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-08T18:58:24.474Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "D:\\BaiTap2.2\\src\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "RegisterForm.cs",
+              "ToolTip": "D:\\BaiTap2.2\\src\\RegisterForm.cs [Design]*",
+              "RelativeToolTip": "RegisterForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T03:52:23.843Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\BaiTap2.2\\src\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\BaiTap2.2\\src\\MainForm.cs [Design]*",
+              "RelativeToolTip": "MainForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T01:06:51.176Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\RegisterForm.cs",
               "RelativeDocumentMoniker": "RegisterForm.cs",
@@ -180,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "LoginForm.Designer.cs",
@@ -193,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Resources.resx",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "Properties\\Resources.resx",
@@ -204,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MatKhau.cs",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\MatKhau.cs",
               "RelativeDocumentMoniker": "MatKhau.cs",
@@ -216,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -228,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UserManagement",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\UserManagement.csproj",
               "RelativeDocumentMoniker": "UserManagement.csproj",
@@ -239,18 +254,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserManagement.csproj",
-              "DocumentMoniker": "D:\\BaiTap2.2\\src\\UserManagement.csproj",
-              "RelativeDocumentMoniker": "UserManagement.csproj",
-              "ToolTip": "D:\\BaiTap2.2\\src\\UserManagement.csproj",
-              "RelativeToolTip": "UserManagement.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-10-08T18:58:24.474Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
               "Title": "RegisterForm.resx",
               "DocumentMoniker": "D:\\BaiTap2.2\\src\\RegisterForm.resx",
@@ -258,8 +261,7 @@
               "ToolTip": "D:\\BaiTap2.2\\src\\RegisterForm.resx",
               "RelativeToolTip": "RegisterForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-10-09T12:42:35.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-09T12:42:35.365Z"
             },
             {
               "$type": "Document",
@@ -271,8 +273,7 @@
               "RelativeToolTip": "MainForm.Designer.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAArwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-09T11:44:56.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-09T11:44:56.646Z"
             },
             {
               "$type": "Document",

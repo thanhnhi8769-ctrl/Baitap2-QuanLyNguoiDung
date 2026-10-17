@@ -12,9 +12,11 @@ namespace UserManagement
         private Point dragCursorPoint;
         private Point dragFormPoint;
 
-        public LoginForm()
+        // Cho phép nhận trạng thái WindowState từ Form trước đó
+        public LoginForm(FormWindowState state = FormWindowState.Normal)
         {
             InitializeComponent();
+            this.WindowState = state;
 
             if (panel1 != null)
             {
@@ -51,7 +53,7 @@ namespace UserManagement
             // Gán sự kiện KeyDown cho các ô nhập liệu
             if (txtTenDangNhap != null)
             {
-                txtTenDangNhap.KeyDown -= InputBox_KeyDown; // Tránh gán trùng lặp
+                txtTenDangNhap.KeyDown -= InputBox_KeyDown;
                 txtTenDangNhap.KeyDown += InputBox_KeyDown;
             }
 
@@ -61,13 +63,10 @@ namespace UserManagement
                 txtPassword.KeyDown += InputBox_KeyDown;
             }
 
-            // 2. Cấu hình thứ tự phím Tab (TabIndex & TabStop)
+            // 2. Cấu hình thứ tự phím Tab
             SetupTabOrder();
         }
 
-        /// <summary>
-        /// Thiết lập thứ tự di chuyển phím Tab đúng chuẩn UI/UX
-        /// </summary>
         private void SetupTabOrder()
         {
             if (txtTenDangNhap != null)
@@ -88,7 +87,6 @@ namespace UserManagement
                 btnDangNhap.TabIndex = 2;
             }
 
-            // ĐÃ SỬA: Cho phép nút Thoát nhận phím Tab và đặt vị trí số 3
             if (btnThoat != null)
             {
                 btnThoat.TabStop = true;
@@ -98,25 +96,19 @@ namespace UserManagement
             if (lnkRegister != null)
             {
                 lnkRegister.TabStop = true;
-                lnkRegister.TabIndex = 4; // Dời nút đăng ký xuống số 4
+                lnkRegister.TabIndex = 4;
             }
 
-            // Các nút thu nhỏ / phóng to / đóng cửa sổ ở góc trên vẫn giữ nguyên tắt TabStop
             if (btnMinimize != null) btnMinimize.TabStop = false;
             if (btnMaximize != null) btnMaximize.TabStop = false;
             if (btnExit != null) btnExit.TabStop = false;
         }
 
-
-
-        /// <summary>
-        /// Xử lý phím Enter khi người dùng gõ trong ô nhập liệu
-        /// </summary>
         private void InputBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                e.SuppressKeyPress = true; // Ngăn tiếng "beep" hệ thống khi nhấn Enter
+                e.SuppressKeyPress = true;
                 btnDangNhap_Click_1(btnDangNhap, EventArgs.Empty);
             }
         }
@@ -138,7 +130,7 @@ namespace UserManagement
 
         private void Panel1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (dragging)
+            if (dragging && this.WindowState == FormWindowState.Normal)
             {
                 Point diff = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
                 this.Location = Point.Add(dragFormPoint, new Size(diff));
@@ -168,6 +160,7 @@ namespace UserManagement
             {
                 this.WindowState = FormWindowState.Normal;
             }
+            CenterPanel();
         }
 
         private void btnExit_Click_2(object sender, EventArgs e)
@@ -177,7 +170,6 @@ namespace UserManagement
 
         private void btnDangNhap_Click_1(object sender, EventArgs e)
         {
-            // 1. Reset nhãn thông báo lỗi về trạng thái rỗng ban đầu để giữ cố định bố cục
             if (lblError != null) lblError.Text = "";
 
             string tenDangNhap = txtTenDangNhap != null ? txtTenDangNhap.Text.Trim() : "";
@@ -197,7 +189,6 @@ namespace UserManagement
                 return;
             }
 
-            // 2. Khóa nút và đổi nhãn thành "Đang xử lý..."
             Button btn = sender as Button;
             string originalText = btn != null ? btn.Text : "Đăng nhập";
             if (btn != null)
@@ -208,15 +199,12 @@ namespace UserManagement
 
             try
             {
-                // 3. Gọi lớp UserDAO để kiểm tra dữ liệu an toàn
                 UserDAO dao = new UserDAO();
                 bool isValid = dao.KiemTraDangNhap(tenDangNhap, matKhau);
 
-                // 4. Xử lý kết quả đăng nhập
                 if (isValid)
                 {
                     dao.CapNhatLanDangNhapCuoi(tenDangNhap);
-                    // Lấy thêm Họ tên và Email từ Database để hiển thị lên MainForm
                     string hoTen = "";
                     string email = "";
                     dao.LayThongTinUser(tenDangNhap, out hoTen, out email);
@@ -224,15 +212,19 @@ namespace UserManagement
 
                     MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Truyền đầy đủ 4 tham số sang MainForm
-                    MainForm main = new MainForm(tenDangNhap, hoTen, email, thoiGianDangNhap);
+                    // Truyền WindowState hiện tại sang MainForm
+                    MainForm main = new MainForm(tenDangNhap, hoTen, email, thoiGianDangNhap, this.WindowState);
                     this.Hide();
                     main.ShowDialog();
                     this.Close();
                 }
                 else
                 {
+<<<<<<< HEAD
                     // Xóa ô mật khẩu trước
+=======
+                    if (lblError != null) lblError.Text = "Sai tên đăng nhập hoặc mật khẩu!";
+>>>>>>> 20a24a6 (update)
                     if (txtPassword != null)
                     {
                         txtPassword.Clear();
@@ -251,7 +243,6 @@ namespace UserManagement
             }
             finally
             {
-                // Mở khóa nút lại sau khi xử lý xong
                 if (btn != null)
                 {
                     btn.Enabled = true;
@@ -262,7 +253,8 @@ namespace UserManagement
 
         private void lnkRegister_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            RegisterForm regForm = new RegisterForm();
+            // Truyền WindowState hiện tại sang RegisterForm
+            RegisterForm regForm = new RegisterForm(this.WindowState);
             this.Hide();
             regForm.ShowDialog();
             this.Close();
@@ -300,25 +292,22 @@ namespace UserManagement
 
         private void txtTenDangNhap_TextChanged(object sender, EventArgs e)
         {
-            lblError.Text = "";
+            if (lblError != null) lblError.Text = "";
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
-            lblError.Text = "";
-
+            if (lblError != null) lblError.Text = "";
         }
 
         private void txtTenDangNhap_Click(object sender, EventArgs e)
         {
-            lblError.Text = "";
-
+            if (lblError != null) lblError.Text = "";
         }
 
         private void txtPassword_Click(object sender, EventArgs e)
         {
-            lblError.Text = "";
-
+            if (lblError != null) lblError.Text = "";
         }
     }
 }

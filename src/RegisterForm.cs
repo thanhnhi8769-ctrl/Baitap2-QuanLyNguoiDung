@@ -12,9 +12,11 @@ namespace UserManagement
         private Point dragCursorPoint;
         private Point dragFormPoint;
 
-        public RegisterForm()
+        // Cho phép nhận trạng thái WindowState từ Form trước đó
+        public RegisterForm(FormWindowState state = FormWindowState.Normal)
         {
             InitializeComponent();
+            this.WindowState = state;
 
             if (panel1 != null)
             {
@@ -34,13 +36,11 @@ namespace UserManagement
             if (lblErrorHoTen != null) lblErrorHoTen.Text = "";
             if (lblErrorEmail != null) lblErrorEmail.Text = "";
 
-            // === BỔ SUNG: Cấu hình phím Enter và Tab Order ===
             if (btnRegister != null)
             {
                 this.AcceptButton = btnRegister;
             }
 
-            // Gán sự kiện KeyDown bắt phím Enter cho các ô nhập liệu
             Control[] inputControls = { txtUsername, txtPassword, txtConfirmPassword, txtHovaTen, txtEmail };
             foreach (var ctrl in inputControls)
             {
@@ -51,13 +51,9 @@ namespace UserManagement
                 }
             }
 
-            // Thiết lập thứ tự Tab
             SetupTabOrder();
         }
 
-        /// <summary>
-        /// Cấu hình thứ tự phím Tab chuẩn UI/UX cho Form Đăng ký
-        /// </summary>
         private void SetupTabOrder()
         {
             if (txtUsername != null) { txtUsername.TabStop = true; txtUsername.TabIndex = 0; }
@@ -68,20 +64,16 @@ namespace UserManagement
             if (btnRegister != null) { btnRegister.TabStop = true; btnRegister.TabIndex = 5; }
             if (btnCancel != null) { btnCancel.TabStop = true; btnCancel.TabIndex = 6; }
 
-            // Tắt TabStop cho các nút điều khiển cửa sổ góc trên
             if (btnMinimize != null) btnMinimize.TabStop = false;
             if (btnMaximize != null) btnMaximize.TabStop = false;
             if (btnExit != null) btnExit.TabStop = false;
         }
 
-        /// <summary>
-        /// Xử lý phím Enter khi người dùng gõ trong các ô nhập liệu
-        /// </summary>
         private void InputBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
-                e.SuppressKeyPress = true; // Ngăn tiếng "beep" của hệ thống
+                e.SuppressKeyPress = true;
                 btnRegister_Click_1(btnRegister, EventArgs.Empty);
             }
         }
@@ -114,7 +106,7 @@ namespace UserManagement
 
         private void Panel1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (dragging)
+            if (dragging && this.WindowState == FormWindowState.Normal)
             {
                 Point diff = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
                 this.Location = Point.Add(dragFormPoint, new Size(diff));
@@ -144,6 +136,7 @@ namespace UserManagement
             {
                 this.WindowState = FormWindowState.Normal;
             }
+            CenterPanel();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -159,14 +152,12 @@ namespace UserManagement
             string hoten = txtHovaTen != null ? txtHovaTen.Text.Trim() : "";
             string email = txtEmail != null ? txtEmail.Text.Trim() : "";
 
-            // Reset tất cả nhãn lỗi về rỗng
             if (lblErrorUsername != null) lblErrorUsername.Text = "";
             if (lblErrorPassword != null) lblErrorPassword.Text = "";
             if (lblErrorConfirm != null) lblErrorConfirm.Text = "";
             if (lblErrorHoTen != null) lblErrorHoTen.Text = "";
             if (lblErrorEmail != null) lblErrorEmail.Text = "";
 
-            // 1. Kiểm tra Tên đăng nhập
             if (string.IsNullOrEmpty(username))
             {
                 if (lblErrorUsername != null) lblErrorUsername.Text = "Không được để trống";
@@ -186,7 +177,6 @@ namespace UserManagement
                 return;
             }
 
-            // 2. Kiểm tra Mật khẩu
             if (string.IsNullOrEmpty(password))
             {
                 if (lblErrorPassword != null) lblErrorPassword.Text = "Không được để trống";
@@ -206,7 +196,6 @@ namespace UserManagement
                 return;
             }
 
-            // 3. Kiểm tra Xác nhận mật khẩu
             if (password != confirmPassword)
             {
                 if (lblErrorConfirm != null) lblErrorConfirm.Text = "Mật khẩu xác nhận không khớp";
@@ -214,7 +203,6 @@ namespace UserManagement
                 return;
             }
 
-            // 4. Kiểm tra Họ và tên
             if (string.IsNullOrEmpty(hoten))
             {
                 if (lblErrorHoTen != null) lblErrorHoTen.Text = "Không được để trống";
@@ -228,7 +216,6 @@ namespace UserManagement
                 return;
             }
 
-            // 5. Kiểm tra Email
             if (string.IsNullOrEmpty(email))
             {
                 if (lblErrorEmail != null) lblErrorEmail.Text = "Không được để trống";
@@ -247,7 +234,6 @@ namespace UserManagement
                 return;
             }
 
-            // Xử lý nút đăng ký khi dữ liệu đã hợp lệ hoàn toàn
             Button btn = sender as Button;
             string originalText = btn != null ? btn.Text : "Đăng ký";
             if (btn != null)
@@ -265,7 +251,8 @@ namespace UserManagement
                 {
                     MessageBox.Show("Đăng ký tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    LoginForm loginForm = new LoginForm();
+                    // Truyền WindowState hiện tại về LoginForm
+                    LoginForm loginForm = new LoginForm(this.WindowState);
                     loginForm.ShowDialog();
                     this.Close();
                 }
@@ -288,83 +275,24 @@ namespace UserManagement
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LoginForm loginForm = new LoginForm();
+            // Truyền WindowState hiện tại về LoginForm
+            LoginForm loginForm = new LoginForm(this.WindowState);
             loginForm.ShowDialog();
             this.Close();
         }
 
-        private void panelCenter_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void RegisterForm_Load_1(object sender, EventArgs e)
-        {
-        }
-
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-            lblErrorUsername.Text = "";
-
-        }
-
-        private void txtUsername_Click(object sender, EventArgs e)
-        {
-            lblErrorUsername.Text = "";
-
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-            lblErrorPassword.Text = "";
-
-        }
-
-        private void txtPassword_Click(object sender, EventArgs e)
-        {
-            lblErrorPassword.Text = "";
-
-        }
-
-        private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
-        {
-            lblErrorConfirm.Text = "";
-
-        }
-
-        private void txtConfirmPassword_Click(object sender, EventArgs e)
-        {
-            lblErrorConfirm.Text = "";
-
-        }
-
-        private void txtHovaTen_TextChanged(object sender, EventArgs e)
-        {
-            lblErrorHoTen.Text = "";
-
-        }
-
-        private void txtHovaTen_Click(object sender, EventArgs e)
-        {
-            lblErrorHoTen.Text = "";
-
-        }
-
-        private void lblErrorEmail_Click(object sender, EventArgs e)
-        {
-            lblErrorEmail.Text = "";
-
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-            lblErrorEmail.Text = "";
-
-        }
-
-        private void txtEmail_Click(object sender, EventArgs e)
-        {
-            lblErrorEmail.Text = "";
-
-        }
+        private void panelCenter_Paint(object sender, PaintEventArgs e) { }
+        private void RegisterForm_Load_1(object sender, EventArgs e) { }
+        private void txtUsername_TextChanged(object sender, EventArgs e) { if (lblErrorUsername != null) lblErrorUsername.Text = ""; }
+        private void txtUsername_Click(object sender, EventArgs e) { if (lblErrorUsername != null) lblErrorUsername.Text = ""; }
+        private void txtPassword_TextChanged(object sender, EventArgs e) { if (lblErrorPassword != null) lblErrorPassword.Text = ""; }
+        private void txtPassword_Click(object sender, EventArgs e) { if (lblErrorPassword != null) lblErrorPassword.Text = ""; }
+        private void txtConfirmPassword_TextChanged(object sender, EventArgs e) { if (lblErrorConfirm != null) lblErrorConfirm.Text = ""; }
+        private void txtConfirmPassword_Click(object sender, EventArgs e) { if (lblErrorConfirm != null) lblErrorConfirm.Text = ""; }
+        private void txtHovaTen_TextChanged(object sender, EventArgs e) { if (lblErrorHoTen != null) lblErrorHoTen.Text = ""; }
+        private void txtHovaTen_Click(object sender, EventArgs e) { if (lblErrorHoTen != null) lblErrorHoTen.Text = ""; }
+        private void lblErrorEmail_Click(object sender, EventArgs e) { if (lblErrorEmail != null) lblErrorEmail.Text = ""; }
+        private void txtEmail_TextChanged(object sender, EventArgs e) { if (lblErrorEmail != null) lblErrorEmail.Text = ""; }
+        private void txtEmail_Click(object sender, EventArgs e) { if (lblErrorEmail != null) lblErrorEmail.Text = ""; }
     }
 }
