@@ -43,14 +43,17 @@
 
 ### 👤 Đăng ký tài khoản
 
-#### 📝 Thông tin và xử lý đăng ký
+#### 🎯 Thông tin và xử lý đăng ký
 ✦ **Tạo tài khoản:** Nhập tên đăng nhập, mật khẩu, họ tên và email.
 
 ✦ **Kiểm tra thông tin:** Kiểm tra dữ liệu nhập và xác nhận mật khẩu.
 
 ✦ **Lưu tài khoản:** Lưu thông tin đăng ký vào cơ sở dữ liệu SQL Server.
 
+#### 
+
 #### 🛠️ Quy trình xử lý
+
 
 ### 🔐 Đăng nhập hệ thống
 
