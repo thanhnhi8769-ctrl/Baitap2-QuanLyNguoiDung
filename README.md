@@ -100,6 +100,7 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 | Họ tên không nằm trong khoảng quy định | Họ tên từ 2-50 ký tự |
 | Email không vượt qua kiểm tra | Email không đúng định dạng |
 
+---
 ### 🔐 Đăng nhập hệ thống
 
 ### 🔐 1. Đăng nhập hệ thống
