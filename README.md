@@ -140,6 +140,9 @@ Chọn **Thoát** để đóng ứng dụng.
 | Xác thực không thành công | Sai tên đăng nhập hoặc mật khẩu! |
 | Xác thực thành công | Đăng nhập thành công! |
 
+#### ⌨️ Hỗ trợ bàn phím
+✦ **Enter:** Thực hiện đăng nhập.
+<br>✦ **Tab:** Di chuyển theo thứ tự Tên đăng nhập → Mật khẩu → Đăng nhập → Thoát → Đăng ký.
 
 
 ---
