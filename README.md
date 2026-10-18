@@ -51,25 +51,46 @@ Baitap2-QuanLyNguoiDung/
 ```
 ## 🚀 Hướng Dẫn Cài Đặt & Chạy Dự Án
 
-### Clone dự án về máy:
+### 1. Clone dự án về máy
 
-[Git clone](https://github.com/thanhnhi8769-ctrl/Baitap2-QuanLyNguoiDung.git)
+Mở Terminal (hoặc Git Bash) và chạy các lệnh sau để tải mã nguồn về:
 
-### Cấu hình Cơ sở Dữ liệu:
+```bash
+git clone [https://github.com/thanhnhi8769-ctrl/Baitap2-QuanLyNguoiDung.git](https://github.com/thanhnhi8769-ctrl/Baitap2-QuanLyNguoiDung.git)
+cd Baitap2-QuanLyNguoiDung
+```
 
-Mở SQL Server Management Studio (SSMS).
 
-Chạy script tạo cơ sở dữ liệu nằm trong thư mục database/.
+### 2. Cấu hình Cơ sở Dữ liệu:
 
-Cập nhật chuỗi kết nối (ChuoiKetNoi) trong file UserDAO.cs sao cho khớp với thông tin server SQL của bạn.
+Dự án sử dụng SQL Server, cần thiết lập Database trước khi chạy code:
 
-### Chạy ứng dụng:
+**Bước 1:** Mở phần mềm SQL Server Management Studio (SSMS) và kết nối vào Server máy bạn.
 
-Mở file solution (.slnx) bằng Visual Studio.
+**Bước 2:** Mở file script SQL nằm trong thư mục database/ (của mã nguồn vừa tải) và nhấn Execute (F5) để tự động khởi tạo cơ sở dữ liệu và các bảng.
 
-Nhấn Ctrl + Shift + B để build lại toàn bộ project.
+**Bước 3:** Mở file UserDAO.cs trong Visual Studio.
 
-Nhấn nút Start (hoặc F5) để chạy ứng dụng.
+**Bước 4:** Cập nhật lại biến chuỗi kết nối (ChuoiKetNoi) sao cho khớp với Server SQL của bạn.
+Ví dụ minh họa:
+`   private const string ChuoiKetNoi =
+@"Server=localhost,1433;Database=QuanLyNguoiDung;" +
+@"User Id=sa;Password=Thu031207;TrustServerCertificate=True;";
+`
+
+### 3. Chạy ứng dụng:
+
+**Bước 1:** Mở file solution (.slnx hoặc .sln) của dự án bằng Visual Studio.
+
+**Bước 2:** (Tùy chọn) Nhấn chuột phải vào Solution trong cửa sổ Solution Explorer chọn Restore NuGet Packages để đảm bảo các thư viện (như Microsoft.Data.SqlClient) đã được tải đầy đủ.
+
+**Bước 3:** Nhấn tổ hợp phím Ctrl + Shift + B (hoặc vào menu Build > Build Solution) để biên dịch toàn bộ project.
+
+**Bước 4:** Nhấn nút Start trên thanh công cụ (hoặc phím F5) để khởi chạy ứng dụng.
+
+>[!NOTE]
+>Rất nhiều trường hợp clone code C# về bị lỗi do thiếu thư viện, nên việc khôi phục các gói NuGet (như `SqlClient`) là rất cần thiết.
+
 
 ## 🧩 Chức năng chính
 ✦ Đăng ký tài khoản
