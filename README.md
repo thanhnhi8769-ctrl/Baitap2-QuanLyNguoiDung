@@ -42,7 +42,7 @@
 
 ## ✨ Tính Năng Chính
 
-### 👤 Đăng ký tài khoản trên hệ thống
+### 👤 Đăng ký tài khoản trên ứng dụng
 
 #### 📝 Thông tin đăng ký
 | Thông tin | Yêu cầu |
@@ -102,8 +102,7 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 | Email không vượt qua kiểm tra | Email không đúng định dạng |
 
 ---
-### 🔐 Đăng nhập hệ thống
-
+### 👤 Đăng nhập tài khoản trên ứng dụng
 #### 📝 Thông tin đăng nhập
 | Thông tin | Yêu cầu |
 |---|---|
@@ -120,9 +119,6 @@ Chọn **Đăng ký** nếu chưa có tài khoản.
 Chọn **Thoát** để đóng ứng dụng.
 
 #### 🛠️ Quy trình xử lý
-
-
-### 🔐 1. Đăng nhập hệ thống
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
 - [x] **Lịch sử truy cập:** Tự động cập nhật trường `LanDangNhapCuoi` (thời gian đăng nhập cuối cùng) vào cơ sở dữ liệu khi đăng nhập thành công.
 - [x] **Trải nghiệm người dùng (UX) mượt mà:**
