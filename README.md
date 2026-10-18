@@ -48,7 +48,9 @@
 |---|---|
 | Tên đăng nhập | Từ 3-20 ký tự, chỉ gồm chữ cái, chữ số và dấu gạch dưới '_'. |
 | Mật khẩu | Tối thiểu 8 ký tự, có ít nhất một chữ cái và một chữ số. |
-| Xác nhận mật khẩu | 
+| Xác nhận mật khẩu | Phải trùng với mật khẩu đã nhập. |
+| Họ và tên | Từ 2-50 ký tự, không được để trống. |
+| Email | Không được để trống, bắt buộc nhập địa chỉ email có định dạng hợp lệ. Địa chỉ phải được `MailAddress` phân tích thành công và kết quả `addr.Address` phải trùng với chuỗi email đã nhập |
 
 #### 🎯 Thông tin và xử lý đăng ký
 ✦ **Tạo tài khoản:** Nhập tên đăng nhập, mật khẩu, họ tên và email.
