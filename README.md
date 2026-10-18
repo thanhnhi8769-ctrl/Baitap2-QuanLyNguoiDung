@@ -43,14 +43,19 @@
 
 ### 👤 Đăng ký tài khoản
 
+#### 📝 Thông tin đăng ký
+| Thông tin | Yêu cầu |
+|---|---|
+| Tên đăng nhập | Từ 3-20 ký tự, chỉ gồm chữ cái, chữ số và dấu gạch dưới '_'. |
+| Mật khẩu | Tối thiểu 8 ký tự, có ít nhất một chữ cái và một chữ số. |
+| Xác nhận mật khẩu | 
+
 #### 🎯 Thông tin và xử lý đăng ký
 ✦ **Tạo tài khoản:** Nhập tên đăng nhập, mật khẩu, họ tên và email.
 
 ✦ **Kiểm tra thông tin:** Kiểm tra dữ liệu nhập và xác nhận mật khẩu.
 
 ✦ **Lưu tài khoản:** Lưu thông tin đăng ký vào cơ sở dữ liệu SQL Server.
-
-#### 
 
 #### 🛠️ Quy trình xử lý
 
