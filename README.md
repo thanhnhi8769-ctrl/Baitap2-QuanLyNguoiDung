@@ -38,7 +38,7 @@
 <br>✦ Lưu mật khẩu dưới dạng băm cùng salt.
 <br>✦ Hiển thị thông tin người dùng trên trang chính.
 <br>✦ Cập nhập thời gian đăng nhập gần nhất khi đăng nhập thành công.
-<br>✦ Đăng xuất có hộp thoại xác nhận.
+<br>✦ Đăng ký, đăng nhập và đăng xuất đều có hộp thoại xác nhận.
 
 ## ✨ Tính Năng Chính
 
