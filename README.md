@@ -80,7 +80,8 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 - [x] **Khôi phục nút:** Cho phép nhấn nút trở lại và đổi chữ “Đang xử lý...” về nội dung ban đầu khi kết thúc xử lý.
 
 #### 🛡️ Lưu trữ mật khẩu
-✦ Cơ sở dữ liệu lưu `MatKhauBam` và `Salt` thay cho mật khẩu gốc.
+✦ Gọi `MatKhau.Tao` để tạo Salt và mật khẩu băm.
+✦ Lưu kết quả vào hai cột `MatKhauBam` và `Salt`, không lưu mật khẩu gốc trong câu lệnh thêm tài khoản.
 <br>✦ Xác nhận mật khẩu chỉ dùng để kiểm tra trên giao diện, không được lưu vào cơ sở dữ liệu.
 <br>✦ Kiểm tra email chỉ xác định định dạng, không xác minh hộp thư có tồn tại.
 > [!IMPORTANT]
@@ -102,6 +103,9 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 
 ---
 ### 🔐 Đăng nhập hệ thống
+
+#### 📝 Thông tin đăng nhập
+
 
 ### 🔐 1. Đăng nhập hệ thống
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
