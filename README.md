@@ -50,6 +50,8 @@
 
 ✦ **Lưu tài khoản:** Lưu thông tin đăng ký vào cơ sở dữ liệu SQL Server.
 
+#### 🛠️ Quy trình xử lý
+
 ### 🔐 Đăng nhập hệ thống
 
 ### 🔐 1. Đăng nhập hệ thống
