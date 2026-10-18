@@ -256,15 +256,6 @@ Chọn **Thoát** để đóng ứng dụng.
 > Đăng xuất không xóa tài khoản hoặc thông tin đã lưu trong database.
 
 ---
-- [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
-- [x] **Lịch sử truy cập:** Tự động cập nhật trường `LanDangNhapCuoi` (thời gian đăng nhập cuối cùng) vào cơ sở dữ liệu khi đăng nhập thành công.
-- [x] **Trải nghiệm người dùng (UX) mượt mà:**
-  - Khóa nút bấm (disable button) trong quá trình xử lý đăng nhập để tránh gửi yêu cầu liên tục.
-  - Tự động xóa trắng ô nhập mật khẩu và đưa con trỏ chuột (Focus) về lại ô tài khoản nếu nhập sai.
-
-### 👤 2. Quản lý tài khoản *(Thêm các tính năng khác của bạn vào đây)*
-- [ ] Thêm, sửa, xóa người dùng.
-- [ ] Phân quyền người dùng (Admin, User).
 
 > [!IMPORTANT]
 > - **Xác thực tài khoản** với mật khẩu được băm an toàn (sử dụng Salt và PBKDF2).
