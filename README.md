@@ -36,7 +36,7 @@
 - **Kiến trúc phần mềm:** Mô hình 3 lớp (Data Access Layer - DAO, BLL, UI)
 
 <div align ="center">
-    <img src="https://github.com/user-attachments/assets/502132bd-75d0-45bd-bc32-9fa691d070a7" width="100%">
+    <img src="./anh.gif" width="100%">
 </div>
 
 ## 📂 Cấu Trúc Thư Mục
