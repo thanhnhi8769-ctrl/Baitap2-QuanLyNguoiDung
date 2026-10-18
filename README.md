@@ -35,10 +35,8 @@
 - **Cơ sở dữ liệu:** Cấu hình qua thư viện `Microsoft.Data.SqlClient`
 - **Kiến trúc phần mềm:** Mô hình 3 lớp (Data Access Layer - DAO, BLL, UI)
 
-
-
 <div align ="center">
-    <img src="gemini_generated_video_cba1c5e7 (1)" autoplay loop muted playsinline width="100%">
+    <img src="https://github.com/user-attachments/assets/502132bd-75d0-45bd-bc32-9fa691d070a7" width="100%">
 </div>
 
 ## 📂 Cấu Trúc Thư Mục
