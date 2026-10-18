@@ -132,6 +132,15 @@ Chọn **Thoát** để đóng ứng dụng.
    - Xóa ô mật khẩu và đưa con trỏ về ô mật khẩu.
 9. **Khôi phục nút:** Bật lại nút và khôi phục nội dung khi luồng xử lý kết thúc.
 
+#### 💬 Thông báo kiểm tra dữ liệu đăng nhập
+| Trường hợp | Thông báo |
+|---|---|
+| Chưa nhập tên đăng nhập | Vui lòng nhập tên đăng nhập! |
+| Chưa nhập mật khẩu | Vui lòng nhập mật khẩu! |
+| Xác thực không thành công | Sai tên đăng nhập hoặc mật khẩu! |
+| Xác thực thành công | Đăng nhập thành công! |
+
+
 
 ---
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
