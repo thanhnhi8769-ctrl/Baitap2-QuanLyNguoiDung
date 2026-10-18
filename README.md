@@ -72,6 +72,12 @@ Nhấn Ctrl + Shift + B để build lại toàn bộ project.
 Nhấn nút Start (hoặc F5) để chạy ứng dụng.
 
 ## 🧩 Chức năng chính
+✦ Đăng ký tài khoản
+<br>✦ Đăng nhập tài khoản
+<br>✦ Trang chính
+
+
+## 🧩 Tính năng chính
 ✦ Đăng ký tài khoản và kiểm tra thông tin nhập.
 <br>✦ Xác thực tên đăng nhập và mật khẩu
 <br>✦ Lưu mật khẩu dưới dạng băm cùng salt.
@@ -79,9 +85,9 @@ Nhấn nút Start (hoặc F5) để chạy ứng dụng.
 <br>✦ Cập nhập thời gian đăng nhập gần nhất khi đăng nhập thành công.
 <br>✦ Đăng ký, đăng nhập và đăng xuất đều có hộp thoại xác nhận.
 
-## ✨ Tính Năng Chính
+## ✨ Giới thiệu chức năng chính
 
-### 👤 Đăng ký tài khoản trên ứng dụng
+### 👤 Đăng ký tài khoản
 
 #### 📝 Thông tin đăng ký
 | Thông tin | Yêu cầu |
@@ -136,7 +142,7 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 | Email không vượt qua kiểm tra | Email không đúng định dạng |
 
 ---
-### 🔐 Đăng nhập tài khoản trên ứng dụng
+### 🔐 Đăng nhập tài khoản
 
 #### 📝 Thông tin đăng nhập
 | Thông tin | Yêu cầu |
