@@ -10,7 +10,7 @@
 ## 🛠️ Công Nghệ & Công Cụ Sử Dụng
 
 <div align="center">
-  <a href ="(https://learn.microsoft.com/vi-vn/dotnet/csharp/)" target="_blank" rel="noopener noreferrer">
+  <a href ="https://learn.microsoft.com/vi-vn/dotnet/csharp/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
   </a>
   <a href ="https://dotnet.microsoft.com/](https://dotnet.microsoft.com/" target="_blank" rel="noopener noreferrer">
