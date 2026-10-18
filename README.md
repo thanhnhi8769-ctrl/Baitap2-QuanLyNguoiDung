@@ -10,22 +10,22 @@
 ## 🛠️ Công Nghệ & Công Cụ Sử Dụng
 
 <div align="center">
-  <a href ="https://vi.wikipedia.org/wiki/C_Sharp_(ng%C3%B4n_ng%E1%BB%AF_l%E1%BA%ADp_tr%C3%ACnh)">
+  <a href ="(https://learn.microsoft.com/vi-vn/dotnet/csharp/)" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
   </a>
-  <a href ="https://dotnet.microsoft.com/](https://dotnet.microsoft.com/">
+  <a href ="https://dotnet.microsoft.com/](https://dotnet.microsoft.com/" target="_blank" rel="noopener noreferrer">
      <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET" />
   </a>
-  <a href ="https://learn.microsoft.com/vi-vn/dotnet/desktop/winforms/">
+  <a href ="https://learn.microsoft.com/vi-vn/dotnet/desktop/winforms/" target="_blank" rel="noopener noreferrer">
      <img src="https://img.shields.io/badge/Windows_Forms-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Windows Forms" />
   </a>
-  <a href ="https://www.microsoft.com/vi-vn/sql-server/">
+  <a href ="https://www.microsoft.com/vi-vn/sql-server/" target="_blank" rel="noopener noreferrer">
      <img src="https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL Server" />
   </a>
-  <a href ="https://git-scm.com/](https://git-scm.com/">
+  <a href ="https://git-scm.com/](https://git-scm.com/" target="_blank" rel="noopener noreferrer">
      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   </a>
-  <a href ="https://github.com/thanhnhi8769-ctrl/Baitap2-QuanLyNguoiDung.git">
+  <a href ="https://github.com/thanhnhi8769-ctrl/Baitap2-QuanLyNguoiDung.git" target="_blank" rel="noopener noreferrer">
      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </div>
