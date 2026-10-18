@@ -111,6 +111,16 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 | **Mật khẩu** | - Không được để trống. <br> - Phải khớp với mật khẩu của tài khoản. |
 
 #### 📖 Cách sử dụng
+1. Mở màn hình đăng nhập.
+2. Nhập tên đăng nhập và mật khẩu đã đăng ký.
+3. Nhấn **Đăng nhập** hoặc nhấn **Enter**.
+4. Khi xuất hiện thông báo **“Đăng nhập thành công!”**, nhấn **OK** để vào trang chính.
+5. Nếu thông tin không chính xác, nhập lại Tên đăng nhập hoặc mật khẩu và thử lại.
+Chọn **Đăng ký** nếu chưa có tài khoản.
+Chọn **Thoát** để đóng ứng dụng.
+
+#### 🛠️ Quy trình xử lý
+
 
 ### 🔐 1. Đăng nhập hệ thống
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
