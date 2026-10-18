@@ -180,8 +180,8 @@ Trang chính hiển thị thông tin của tài khoản vừa đăng nhập.
 4. Hiển thị thông tin lên các nhãn tương ứng.
 5. Sử dụng nội dung thay thế khi thông tin bị thiếu.
 > [!NOTE]
-> Trang chính sử dụng dữ liệu được truyền từ `LoginForm`, không tự truy vấn database.
-> Thời gian hiển thị là thời điểm đăng nhập hiện tại được truyền sang, không phải thời gian của phiên đăng nhập trước.
+> - Trang chính sử dụng dữ liệu được truyền từ `LoginForm`, không tự truy vấn database.
+> - Thời gian hiển thị là thời điểm đăng nhập hiện tại được truyền sang, không phải thời gian của phiên đăng nhập trước.
 
 #### 🚪 Quy trình đăng xuất
 1. Tạm khóa nút Đăng xuất và đổi chữ hiển thị thành **“Đang xử lý...”**.
