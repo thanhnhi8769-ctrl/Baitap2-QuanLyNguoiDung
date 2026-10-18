@@ -42,6 +42,9 @@
 ## ✨ Tính Năng Chính
 
 ### 👤 Đăng ký tài khoản
+
+#### 📝 Thông tin và xử lý đăng ký
+
 ### 🔐 Đăng nhập hệ thống
 
 ### 🔐 1. Đăng nhập hệ thống
