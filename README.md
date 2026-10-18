@@ -183,6 +183,13 @@ Trang chính hiển thị thông tin của tài khoản vừa đăng nhập.
 > Trang chính sử dụng dữ liệu được truyền từ `LoginForm`, không tự truy vấn database.
 > Thời gian hiển thị là thời điểm đăng nhập hiện tại được truyền sang, không phải thời gian của phiên đăng nhập trước.
 
+#### 🚪 Quy trình đăng xuất
+1. Tạm khóa nút Đăng xuất và đổi chữ hiển thị thành **“Đang xử lý...”**.
+2. Mở hộp thoại xác nhận **“Bạn có chắc chắn muốn đăng xuất không?”**.
+3. Nếu chọn **Có**, ẩn trang chính và mở một màn hình đăng nhập mới.
+4. Nếu chọn **Không**, giữ nguyên trang chính và khôi phục nút.
+> [!TIP]
+> Đăng xuất không xóa tài khoản hoặc thông tin đã lưu trong database.
 
 ---
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
