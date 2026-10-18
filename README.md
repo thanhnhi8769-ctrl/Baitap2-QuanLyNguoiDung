@@ -89,6 +89,16 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 > - Email chưa kiểm tra trùng
 
 #### 💬 Thông báo kiểm tra dữ liệu
+| Trường hợp | Thông báo |
+|---|---|
+| Thiếu thông tin bắt buộc | Không được để trống |
+| Tên đăng nhập quá ngắn hoặc quá dài | Tên đăng nhập từ 3-20 ký tự |
+| Tên đăng nhập có ký tự không được phép | Chỉ gồm chữ, số và gạch dưới |
+| Mật khẩu dưới 8 ký tự | Mật khẩu tối thiểu 8 ký tự |
+| Mật khẩu thiếu chữ hoặc số | Mật khẩu phải có cả chữ và số |
+| Xác nhận mật khẩu khác mật khẩu | Mật khẩu xác nhận không khớp |
+| Họ tên không nằm trong khoảng quy định | Họ tên từ 2-50 ký tự |
+| Email không vượt qua kiểm tra | Email không đúng định dạng |
 
 ### 🔐 Đăng nhập hệ thống
 
