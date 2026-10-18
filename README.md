@@ -105,7 +105,12 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 ### 🔐 Đăng nhập hệ thống
 
 #### 📝 Thông tin đăng nhập
+| Thông tin | Yêu cầu |
+|---|---|
+| **Tên đăng nhập** | - Không được để trống. <br> - Sử dụng tên tài khoản đã đăng ký. |
+| **Mật khẩu** | - Không được để trống. <br> - Phải khớp với mật khẩu của tài khoản. |
 
+#### 📖 Cách sử dụng
 
 ### 🔐 1. Đăng nhập hệ thống
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
