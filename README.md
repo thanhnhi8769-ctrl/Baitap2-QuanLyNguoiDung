@@ -115,23 +115,23 @@ Chọn **Đăng ký** nếu chưa có tài khoản.
 Chọn **Thoát** để đóng ứng dụng.
 
 #### 🛠️ Quy trình xử lý
-1. **Xoá thông báo cũ:** Làm trống nhãn lỗi trên giao diện.
-2. **Tiếp nhận dữ liệu:** Lấy tên đăng nhập và mật khẩu, loại bỏ khoảng trắng ở đầu và cuối.
-3. **Kiểm tra ô trống:** Nếu thiếu thông tin, hiển thị lỗi và đưa con trỏ đến ô cần nhập.
-4. **Khoá nút đăng nhập:** Tạm khóa nút Đăng nhập và đổi nội dung thành **“Đang xử lý...”**.
-5. **Tra cứu tài khoản:** Gọi `KiemTraDangNhap` để tìm `MatKhauBam` và `Salt` trong bảng `Users` theo tên đăng nhập.
-6. **Kiểm tra mật khẩu:** Gọi `MatKhau.KiemTra` để đối chiếu mật khẩu vừa nhập với dữ liệu đã lưu.
-7. **Nếu xác thực thành công:**
+- [x] **Xoá thông báo cũ:** Làm trống nhãn lỗi trên giao diện.
+- [x] **Tiếp nhận dữ liệu:** Lấy tên đăng nhập và mật khẩu, loại bỏ khoảng trắng ở đầu và cuối.
+- [x] **Kiểm tra ô trống:** Nếu thiếu thông tin, hiển thị lỗi và đưa con trỏ đến ô cần nhập.
+- [x] **Khoá nút đăng nhập:** Tạm khóa nút Đăng nhập và đổi nội dung thành **“Đang xử lý...”**.
+- [x] **Tra cứu tài khoản:** Gọi `KiemTraDangNhap` để tìm `MatKhauBam` và `Salt` trong bảng `Users` theo tên đăng nhập.
+- [x] **Kiểm tra mật khẩu:** Gọi `MatKhau.KiemTra` để đối chiếu mật khẩu vừa nhập với dữ liệu đã lưu.
+- [x] **Nếu xác thực thành công:**
    - Gọi `CapNhatLanDangNhapCuoi` để cập nhật thời gian vào database.
    - Truy xuất họ tên và email bằng `LayThongTinUser`.
    - Tạo chuỗi thời gian đăng nhập theo định dạng `dd/MM/yyyy HH:mm`.
    - Hiển thị thông báo thành công.
    - Truyền tên đăng nhập, họ tên, email và thời gian sang trang chính.
-8. **Nếu xác thực thất bại:**
+- [x] **Nếu xác thực thất bại:**
    - Hiển thị **“Sai tên đăng nhập hoặc mật khẩu!”** bằng màu đỏ.
    - Giữ nguyên tên đăng nhập.
    - Xóa ô mật khẩu và đưa con trỏ về ô mật khẩu.
-9. **Khôi phục nút:** Bật lại nút và khôi phục nội dung khi luồng xử lý kết thúc.
+- [x] **Khôi phục nút:** Bật lại nút và khôi phục nội dung khi luồng xử lý kết thúc.
 
 #### 💬 Thông báo kiểm tra dữ liệu đăng nhập
 | Trường hợp | Thông báo |
@@ -174,11 +174,11 @@ Chọn **Thoát** để đóng ứng dụng.
 > Nhấn Enter trên trang chính sẽ kích hoạt nút Đăng xuất và mở hộp thoại xác nhận.
 
 #### 🛠️ Quy trình hiển thị thông tin
-1. Nhận bốn giá trị từ `LoginForm`: tên đăng nhập, họ tên, email và thời gian.
-2. Lưu dữ liệu vào các biến của `MainForm`.
-3. Khi form tải, kiểm tra từng giá trị.
-4. Hiển thị thông tin lên các nhãn tương ứng.
-5. Sử dụng nội dung thay thế khi thông tin bị thiếu.
+- [x] Nhận bốn giá trị từ `LoginForm`: tên đăng nhập, họ tên, email và thời gian.
+- [x] Lưu dữ liệu vào các biến của `MainForm`.
+- [x] Khi form tải, kiểm tra từng giá trị.
+- [x] Hiển thị thông tin lên các nhãn tương ứng.
+- [x] Sử dụng nội dung thay thế khi thông tin bị thiếu.
 > [!NOTE]
 > - Trang chính sử dụng dữ liệu được truyền từ `LoginForm`, không tự truy vấn database.
 > - Thời gian hiển thị là thời điểm đăng nhập hiện tại được truyền sang, không phải thời gian của phiên đăng nhập trước.
