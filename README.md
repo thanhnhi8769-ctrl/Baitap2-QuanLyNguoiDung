@@ -157,12 +157,23 @@ Trang chính hiển thị thông tin của tài khoản vừa đăng nhập.
 #### 📋 Thông tin hiển thị
 | Nội dung | Khi có thông tin | Khi thiếu thông tin |
 |---|---|---|
-| **Lời chào** | Hiển thị họ tên người dùng | Hiển thị “Khách!” |
+| **Lời chào** 'Xin chào' | Hiển thị họ tên người dùng | Hiển thị “Khách!” |
 | **Tên đăng nhập** | Hiển thị tên tài khoản đang đăng nhập | Hiển thị “(Không có)” |
 | **Email** | Hiển thị địa chỉ email | Hiển thị “(Chưa cập nhật)” |
 | **Thời gian đăng nhập** | Hiển thị thời gian được truyền từ trang đăng nhập | Sử dụng thời gian hiện tại |
 
 #### 📖 Cách sử dụng
+1. Đăng nhập thành công để truy cập trang chính.
+2. Xem lời chào và thông tin tài khoản.
+3. Kiểm tra tên đăng nhập, email và thời điểm đăng nhập.
+4. Nhấn **Đăng xuất** khi muốn quay về màn hình đăng nhập.
+5. Trong hộp thoại xác nhận:
+   - Chọn **Có** để xác nhận đăng xuất
+   - Chọn **Không** để tiếp tục sử dụng trang chính.
+> [!NOTE]
+> Nhấn Enter trên trang chính sẽ kích hoạt nút Đăng xuất và mở hộp thoại xác nhận.
+
+
 
 ---
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
