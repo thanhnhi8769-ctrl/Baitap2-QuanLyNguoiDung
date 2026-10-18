@@ -141,9 +141,13 @@ Chọn **Thoát** để đóng ứng dụng.
 | Xác thực thành công | Đăng nhập thành công! |
 
 #### ⌨️ Hỗ trợ bàn phím
-✦ **Enter:** Thực hiện đăng nhập.
-<br>✦ **Tab:** Di chuyển theo thứ tự Tên đăng nhập → Mật khẩu → Đăng nhập → Thoát → Đăng ký.
+- [x] **Enter:** Thực hiện đăng nhập.
+- [x] **Tab:** Di chuyển theo thứ tự Tên đăng nhập → Mật khẩu → Đăng nhập → Thoát → Đăng ký.
 
+#### 🕒 Theo dõi lần đăng nhập gần nhất
+✦ Sau khi xác thực thành công, chương trình cập nhật trường `LanDangNhapCuoi` trong bảng `Users`.
+<br>✦ Thời gian cập nhật được lấy từ `DateTime.Now` trên máy chạy ứng dụng.
+<br>✦ Giá trị được ghi đè sau mỗi lần đăng nhập thành công; không lưu danh sách lịch sử của tất cả các lần đăng nhập.
 
 ---
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
