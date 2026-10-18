@@ -119,7 +119,19 @@ Chọn **Thoát** để đóng ứng dụng.
 3. **Kiểm tra ô trống:** Nếu thiếu thông tin, hiển thị lỗi và đưa con trỏ đến ô cần nhập.
 4. **Khoá nút đăng nhập:** Tạm khóa nút Đăng nhập và đổi nội dung thành **“Đang xử lý...”**.
 5. **Tra cứu tài khoản:** Gọi `KiemTraDangNhap` để tìm `MatKhauBam` và `Salt` trong bảng `Users` theo tên đăng nhập.
-6. 
+6. **Kiểm tra mật khẩu:** Gọi `MatKhau.KiemTra` để đối chiếu mật khẩu vừa nhập với dữ liệu đã lưu.
+7. **Nếu xác thực thành công:**
+   - Gọi `CapNhatLanDangNhapCuoi` để cập nhật thời gian vào database.
+   - Truy xuất họ tên và email bằng `LayThongTinUser`.
+   - Tạo chuỗi thời gian đăng nhập theo định dạng `dd/MM/yyyy HH:mm`.
+   - Hiển thị thông báo thành công.
+   - Truyền tên đăng nhập, họ tên, email và thời gian sang trang chính.
+8. **Nếu xác thực thất bại:**
+   - Hiển thị **“Sai tên đăng nhập hoặc mật khẩu!”** bằng màu đỏ.
+   - Giữ nguyên tên đăng nhập.
+   - Xóa ô mật khẩu và đưa con trỏ về ô mật khẩu.
+9. **Khôi phục nút:** Bật lại nút và khôi phục nội dung khi luồng xử lý kết thúc.
+
 
 ---
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
