@@ -72,8 +72,9 @@ Dự án sử dụng SQL Server, cần thiết lập Database trước khi chạ
 
 **Bước 4:** Cập nhật lại biến chuỗi kết nối (ChuoiKetNoi) sao cho khớp với Server SQL của bạn.
 Ví dụ minh họa:
-`   private const string ChuoiKetNoi = @"Server=localhost,1433;Database=QuanLyNguoiDung;" + @"User Id=sa;Password=Thu031207;TrustServerCertificate=True;";
-`
+```bash
+  private const string ChuoiKetNoi = @"Server=localhost,1433;Database=QuanLyNguoiDung;" + @"User Id=sa;Password=Thu031207; TrustServerCertificate = True;"
+```
 
 ### 3. Chạy ứng dụng:
 
