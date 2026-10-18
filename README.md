@@ -98,6 +98,7 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 
 ---
 ### 👤 Đăng nhập tài khoản trên ứng dụng
+
 #### 📝 Thông tin đăng nhập
 | Thông tin | Yêu cầu |
 |---|---|
@@ -148,6 +149,20 @@ Chọn **Thoát** để đóng ứng dụng.
 ✦ Sau khi xác thực thành công, chương trình cập nhật trường `LanDangNhapCuoi` trong bảng `Users`.
 <br>✦ Thời gian cập nhật được lấy từ `DateTime.Now` trên máy chạy ứng dụng.
 <br>✦ Giá trị được ghi đè sau mỗi lần đăng nhập thành công; không lưu danh sách lịch sử của tất cả các lần đăng nhập.
+
+---
+### 🖥️ Trang chính
+Trang chính hiển thị thông tin của tài khoản vừa đăng nhập.
+
+#### 📋 Thông tin hiển thị
+| Nội dung | Khi có thông tin | Khi thiếu thông tin |
+|---|---|---|
+| **Lời chào** | Hiển thị họ tên người dùng | Hiển thị “Khách!” |
+| **Tên đăng nhập** | Hiển thị tên tài khoản đang đăng nhập | Hiển thị “(Không có)” |
+| **Email** | Hiển thị địa chỉ email | Hiển thị “(Chưa cập nhật)” |
+| **Thời gian đăng nhập** | Hiển thị thời gian được truyền từ trang đăng nhập | Sử dụng thời gian hiện tại |
+
+#### 📖 Cách sử dụng
 
 ---
 - [x] **Xác thực an toàn:** Mật khẩu được băm (hashing) bảo mật bằng cách sử dụng **Salt** kết hợp thuật toán **PBKDF2**.
