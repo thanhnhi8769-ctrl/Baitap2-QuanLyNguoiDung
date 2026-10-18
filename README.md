@@ -41,7 +41,7 @@
 
 ## ✨ Tính Năng Chính
 
-### 👤 Đăng ký tài khoản
+### 👤 Đăng ký tài khoản trên hệ thống
 
 #### 📝 Thông tin đăng ký
 | Thông tin | Yêu cầu |
