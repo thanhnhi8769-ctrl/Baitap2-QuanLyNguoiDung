@@ -173,6 +173,15 @@ Trang chính hiển thị thông tin của tài khoản vừa đăng nhập.
 > [!NOTE]
 > Nhấn Enter trên trang chính sẽ kích hoạt nút Đăng xuất và mở hộp thoại xác nhận.
 
+#### 🛠️ Quy trình hiển thị thông tin
+1. Nhận bốn giá trị từ `LoginForm`: tên đăng nhập, họ tên, email và thời gian.
+2. Lưu dữ liệu vào các biến của `MainForm`.
+3. Khi form tải, kiểm tra từng giá trị.
+4. Hiển thị thông tin lên các nhãn tương ứng.
+5. Sử dụng nội dung thay thế khi thông tin bị thiếu.
+> [!NOTE]
+> Trang chính sử dụng dữ liệu được truyền từ `LoginForm`, không tự truy vấn database.
+> Thời gian hiển thị là thời điểm đăng nhập hiện tại được truyền sang, không phải thời gian của phiên đăng nhập trước.
 
 
 ---
