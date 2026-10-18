@@ -39,6 +39,7 @@
 <br>✦ Hiển thị thông tin người dùng trên trang chính.
 <br>✦ Cập nhập thời gian đăng nhập gần nhất khi đăng nhập thành công.
 <br>✦ Đăng ký, đăng nhập và đăng xuất đều có hộp thoại xác nhận.
+<br>✦ Hỗ trợ phím Enter, Tab và các thao tác điều khiển cửa sổ.
 
 ## ✨ Tính Năng Chính
 
@@ -60,11 +61,12 @@
 
 #### 📖 Cách sử dụng
 1. Tại màn hình đăng nhập, chọn **Đăng ký**.
-2. Nhập tên đăng nhập, mật khẩu, xác nhận mật khẩu, họ tên và email.
+2. Nhập đầy đủ các thông tin: tên đăng nhập, mật khẩu, xác nhận mật khẩu, họ tên và email.
 3. Nhấn **Đăng ký** khi nhập xong thông tin.
-4. Nếu có thông báo lỗi, sửa trường được chỉ định rồi thực hiện lại.
-5. Sau khi đăng ký thành công, chương trình chuyển về màn hình đăng nhập.
-6. Sử dụng tài khoản vừa tạo để đăng nhập.
+4. Nếu có thông báo lỗi, sửa thông tin tại ô được chỉ định rồi thử lại.
+5. Sau khi đăng ký thành công, nhận thông báo **“Đăng ký tài khoản thành công!”**, nhấn **OK**.
+6. Chương trình chuyển về màn hình đăng nhập.
+7. Sử dụng tài khoản vừa tạo để đăng nhập.
 Chọn **Huỷ** để quay lại màn hình đăng nhập.
 
 #### 🛠️ Quy trình xử lý
