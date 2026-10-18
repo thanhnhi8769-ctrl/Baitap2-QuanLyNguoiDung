@@ -41,6 +41,35 @@
     <img src="gemini_generated_video_cba1c5e7 (1)" autoplay loop muted playsinline width="100%">
 </div>
 
+## 📂 Cấu Trúc Thư Mục
+```text
+Baitap2-QuanLyNguoiDung/
+│
+├── database/      # Script tạo cơ sở dữ liệu và bảng dữ liệu SQL
+├── docs/          # Tài liệu hướng dẫn và thiết kế giao diện
+└── src/           # Mã nguồn chính của dự án C# Windows Forms
+```
+## 🚀 Hướng Dẫn Cài Đặt & Chạy Dự Án
+
+### Clone dự án về máy:
+
+[Git clone](https://github.com/thanhnhi8769-ctrl/Baitap2-QuanLyNguoiDung.git)
+
+### Cấu hình Cơ sở Dữ liệu:
+
+Mở SQL Server Management Studio (SSMS).
+
+Chạy script tạo cơ sở dữ liệu nằm trong thư mục database/.
+
+Cập nhật chuỗi kết nối (ChuoiKetNoi) trong file UserDAO.cs sao cho khớp với thông tin server SQL của bạn.
+
+### Chạy ứng dụng:
+
+Mở file solution (.slnx) bằng Visual Studio.
+
+Nhấn Ctrl + Shift + B để build lại toàn bộ project.
+
+Nhấn nút Start (hoặc F5) để chạy ứng dụng.
 
 ## 🧩 Chức năng chính
 ✦ Đăng ký tài khoản và kiểm tra thông tin nhập.
@@ -86,7 +115,7 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 
 #### 🛡️ Lưu trữ mật khẩu
 ✦ Gọi `MatKhau.Tao` để tạo Salt và mật khẩu băm.
-✦ Lưu kết quả vào hai cột `MatKhauBam` và `Salt`, không lưu mật khẩu gốc trong câu lệnh thêm tài khoản.
+<br>✦ Lưu kết quả vào hai cột `MatKhauBam` và `Salt`, không lưu mật khẩu gốc trong câu lệnh thêm tài khoản.
 <br>✦ Xác nhận mật khẩu chỉ dùng để kiểm tra trên giao diện, không được lưu vào cơ sở dữ liệu.
 <br>✦ Kiểm tra email chỉ xác định định dạng, không xác minh hộp thư có tồn tại.
 > [!IMPORTANT]
