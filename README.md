@@ -40,6 +40,8 @@
 - Cập nhập thời gian đăng nhập gần nhất khi đăng nhập thành công.
 
 ## ✨ Tính Năng Chính
+
+### 👤 Đăng ký tài khoản
 ### 🔐 Đăng nhập hệ thống
 
 ### 🔐 1. Đăng nhập hệ thống
