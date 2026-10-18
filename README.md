@@ -60,6 +60,10 @@
 ✦ **Lưu tài khoản:** Lưu thông tin đăng ký vào cơ sở dữ liệu SQL Server.
 
 #### 📖 Cách sử dụng
+1. Tại màn hình đăng nhập, chọn **Đăng ký**.
+2. Nhập tên đăng nhập, mật khẩu, xác nhận mật khẩu, họ tên và email.
+3. Nhấn **Đăng ký** khi nhập xong thông tin.
+4. 
 
 #### 🛠️ Quy trình xử lý
 
