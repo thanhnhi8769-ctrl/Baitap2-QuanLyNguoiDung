@@ -205,10 +205,6 @@ Chọn **Thoát** để đóng ứng dụng.
 | Xác thực không thành công | Sai tên đăng nhập hoặc mật khẩu! |
 | Xác thực thành công | Đăng nhập thành công! |
 
-#### ⌨️ Hỗ trợ bàn phím
-- [x] **Enter:** Thực hiện đăng nhập.
-- [x] **Tab:** Di chuyển theo thứ tự Tên đăng nhập → Mật khẩu → Đăng nhập → Thoát → Đăng ký.
-
 #### 🕒 Theo dõi lần đăng nhập gần nhất
 ✦ Sau khi xác thực thành công, chương trình cập nhật trường `LanDangNhapCuoi` trong bảng `Users`.
 <br>✦ Thời gian cập nhật được lấy từ `DateTime.Now` trên máy chạy ứng dụng.
@@ -254,6 +250,18 @@ Chọn **Thoát** để đóng ứng dụng.
 4. Nếu chọn **Không**, giữ nguyên trang chính và khôi phục nút.
 > [!TIP]
 > Đăng xuất không xóa tài khoản hoặc thông tin đã lưu trong database.
+
+---
+### ⌨️ Hỗ trợ bàn phím
+
+| Màn hình | Phím | Chức năng |
+|---|---|---|
+| Đăng ký | Enter | Thực hiện đăng ký |
+| Đăng ký | Tab | Tên đăng nhập → Mật khẩu → Xác nhận mật khẩu → Họ tên → Email → Đăng ký → Hủy |
+| Đăng nhập | Enter | Thực hiện đăng nhập |
+| Đăng nhập | Tab | Tên đăng nhập → Mật khẩu → Đăng nhập → Thoát → Đăng ký |
+| Trang chính | Enter | Kích hoạt Đăng xuất và mở hộp thoại xác nhận |
+| Trang chính | Tab | Chuyển đến nút Đăng xuất |
 
 ---
 
