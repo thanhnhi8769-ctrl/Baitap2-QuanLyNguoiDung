@@ -33,11 +33,12 @@
 
 
 ## 🧩 Chức năng chính
-- Đăng ký tài khoản người dùng.
-- Kiểm tra thông tin đăng nhập.
-- Lưu mật khẩu dưới dạng băm cùng salt.
-- Hiển thị thông tin cá nhân trên trang chính.
-- Cập nhập thời gian đăng nhập gần nhất khi đăng nhập thành công.
+✦ Đăng ký tài khoản và kiểm tra thông tin nhập.
+✦ Xác thực tên đăng nhập và mật khẩu
+✦ Lưu mật khẩu dưới dạng băm cùng salt.
+✦ Hiển thị thông tin người dùng trên trang chính.
+✦ Cập nhập thời gian đăng nhập gần nhất khi đăng nhập thành công.
+✦ Đăng xuất có hộp thoại xác nhận.
 
 ## ✨ Tính Năng Chính
 
