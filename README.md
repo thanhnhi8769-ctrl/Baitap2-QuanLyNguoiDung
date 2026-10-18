@@ -79,6 +79,17 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 - [x] **Thông báo kết quả:** Nếu lưu thành công, thông báo và chuyển về đăng nhập; nếu thất bại, hiển thị lỗi.
 - [x] **Khôi phục nút:** Cho phép nhấn nút trở lại và đổi chữ “Đang xử lý...” về nội dung ban đầu khi kết thúc xử lý.
 
+#### 🛡️ Lưu trữ mật khẩu
+✦ Cơ sở dữ liệu lưu `MatKhauBam` và `Salt` thay cho mật khẩu gốc.
+<br>✦ Xác nhận mật khẩu chỉ dùng để kiểm tra trên giao diện, không được lưu vào cơ sở dữ liệu.
+<br>✦ Kiểm tra email chỉ xác định định dạng, không xác minh hộp thư có tồn tại.
+> [!IMPORTANT]
+> - Mỗi lần nhấn Đăng ký, chương trình hiển thị lỗi đầu tiên phát hiện được.
+> - Khoảng trắng ở đầu và cuối các trường, bao gồm mật khẩu, được loại bỏ trước khi xử lý.
+> - Email chưa kiểm tra trùng
+
+#### 💬 Thông báo kiểm tra dữ liệu
+
 ### 🔐 Đăng nhập hệ thống
 
 ### 🔐 1. Đăng nhập hệ thống
