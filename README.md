@@ -69,7 +69,15 @@
 Chọn **Huỷ** để quay lại màn hình đăng nhập.
 
 #### 🛠️ Quy trình xử lý
-
+- [x] **Tiếp nhận thông tin:** Đọc dữ liệu từ các ô nhập và loại bỏ khoảng trắng ở đầu, cuối bằng `Trim()`.
+- [x] **Xoá lỗi cũ:** Làm trống các nhãn thông báo lỗi.
+- [x] **Kiểm tra dữ liệu:** Kiểm tra lần lượt tên đăng nhập, mật khẩu, xác nhận mật khẩu, họ tên và email.
+- [x] **Xử lý thông tin không hợp lệ:** Hiển thị lỗi, đưa con trỏ về ô cần sửa và dừng xử lý.
+- [x] **Khoá nút:** Khi thông tin hợp lệ, tạm khóa nút Đăng ký và đổi chữ thành **“Đang xử lý...”**.
+- [x] **Tạo dữ liệu mật khẩu:** Gọi `MatKhau.Tao` để tạo Salt và mật khẩu băm.
+- [x] **Lưu tài khoản:** Gọi `UserDAO.DangKyUser` để thêm dữ liệu vào bảng `Users`.
+- [x] **Thông báo kết quả:** Nếu lưu thành công, thông báo và chuyển về đăng nhập; nếu thất bại, hiển thị lỗi.
+- [x] **Khôi phục nút:** Cho phép nhấn nút trở lại và đổi chữ “Đang xử lý...” về nội dung ban đầu khi kết thúc xử lý.
 
 ### 🔐 Đăng nhập hệ thống
 
