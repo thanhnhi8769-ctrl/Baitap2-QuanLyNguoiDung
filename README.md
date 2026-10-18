@@ -97,7 +97,7 @@ Chọn **Huỷ** để quay lại màn hình đăng nhập.
 | Email không vượt qua kiểm tra | Email không đúng định dạng |
 
 ---
-### 👤 Đăng nhập tài khoản trên ứng dụng
+### 🔐 Đăng nhập tài khoản trên ứng dụng
 
 #### 📝 Thông tin đăng nhập
 | Thông tin | Yêu cầu |
