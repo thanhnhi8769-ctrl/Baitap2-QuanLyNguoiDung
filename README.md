@@ -54,11 +54,9 @@
 | Email | - Không được để trống, bắt buộc nhập địa chỉ email có định dạng hợp lệ. <br>- Sử dụng `MailAddress` để phân tích địa chỉ email. Nếu không hợp lệ, chương trình hiển thị “Email không đúng định dạng” và đưa con trỏ về ô Email. <br>- Kết quả `addr.Address` phải trùng với chuỗi email đã nhập. <br>- Chương trình chưa xác minh email có tồn tại, chưa gửi mã xác nhận và chưa kiểm tra email đã được tài khoản khác sử dụng. (Phạm vi kiểm tra) |
 
 #### 🎯 Thông tin và xử lý đăng ký
-✦ **Tạo tài khoản:** Nhập tên đăng nhập, mật khẩu, họ tên và email.
-
-✦ **Kiểm tra thông tin:** Kiểm tra dữ liệu nhập và xác nhận mật khẩu.
-
-✦ **Lưu tài khoản:** Lưu thông tin đăng ký vào cơ sở dữ liệu SQL Server.
+- **Tạo tài khoản:** Nhập tên đăng nhập, mật khẩu, họ tên và email.
+- **Kiểm tra thông tin:** Kiểm tra dữ liệu nhập và xác nhận mật khẩu.
+- **Lưu tài khoản:** Lưu thông tin đăng ký vào cơ sở dữ liệu SQL Server.
 
 #### 📖 Cách sử dụng
 1. Tại màn hình đăng nhập, chọn **Đăng ký**.
