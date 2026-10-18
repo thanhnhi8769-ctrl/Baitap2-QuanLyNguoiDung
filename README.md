@@ -152,7 +152,7 @@ Chọn **Thoát** để đóng ứng dụng.
 
 ---
 ### 🖥️ Trang chính
-Trang chính hiển thị thông tin của tài khoản vừa đăng nhập.
+✦ Trang chính hiển thị thông tin của tài khoản vừa đăng nhập.
 
 #### 📋 Thông tin hiển thị
 | Nội dung | Khi có thông tin | Khi thiếu thông tin |
