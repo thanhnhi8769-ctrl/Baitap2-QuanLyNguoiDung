@@ -96,16 +96,7 @@ Ví dụ minh họa:
 <br>✦ Đăng nhập tài khoản
 <br>✦ Trang chính
 
-
-## 🧩 Tính năng chính
-✦ Đăng ký tài khoản và kiểm tra thông tin nhập.
-<br>✦ Xác thực tên đăng nhập và mật khẩu
-<br>✦ Lưu mật khẩu dưới dạng băm cùng salt.
-<br>✦ Hiển thị thông tin người dùng trên trang chính.
-<br>✦ Cập nhập thời gian đăng nhập gần nhất khi đăng nhập thành công.
-<br>✦ Đăng ký, đăng nhập và đăng xuất đều có hộp thoại xác nhận.
-
-## ✨ Giới thiệu chức năng chính
+## ✨ Chi tiết chức năng chính
 
 ### 👤 Đăng ký tài khoản
 
