@@ -91,12 +91,12 @@ Ví dụ minh họa:
 >Rất nhiều trường hợp clone code C# về bị lỗi do thiếu thư viện, nên việc khôi phục các gói NuGet (như `SqlClient`) là rất cần thiết.
 
 
-## 🧩 Chức năng chính
-✦ Đăng ký tài khoản
-<br>✦ Đăng nhập tài khoản
-<br>✦ Trang chính
+## 🎯 Chức Năng Chính
 
-## ✨ Chi tiết chức năng chính
+- 📝 **Đăng ký:** Tạo tài khoản mới và kiểm tra dữ liệu đầu vào.
+- 🔐 **Đăng nhập:** Xác thực tài khoản người dùng.
+- 👤 **Trang chủ:** Hiển thị thông tin người dùng sau khi đăng nhập.
+## Chi tiết chức năng chính
 
 ### 👤 Đăng ký tài khoản
 
