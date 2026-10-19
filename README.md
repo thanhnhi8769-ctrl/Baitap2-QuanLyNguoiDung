@@ -265,94 +265,26 @@ Chọn **Thoát** để đóng ứng dụng.
 | Trang chính | Tab | Chuyển đến nút Đăng xuất |
 
 ---
-### 🔄 Xử lý và truy xuất dữ liệu
+## 🔄 Luồng xử lý và truy xuất dữ liệu
 
-Ứng dụng sử dụng **SQL Server** để lưu trữ và quản lý thông tin tài khoản. Luồng xử lý được tổ chức theo mô hình **UI – BLL – DAO**, giúp phân tách giao diện người dùng, xử lý nghiệp vụ và truy cập dữ liệu.
+Ứng dụng thực hiện xử lý dữ liệu theo trình tự từ giao diện người dùng đến lớp truy cập dữ liệu, sau đó trả kết quả về để cập nhật giao diện.
 
-### 📝 1. Xử lý đăng ký tài khoản
+### 📌 Quy trình xử lý
 
-```text
-👤 Người dùng nhập thông tin
-            ↓
-🖥️ UI – Kiểm tra dữ liệu đầu vào
-            ↓
-⚙️ BLL – Xử lý nghiệp vụ và băm mật khẩu
-            ↓
-🗄️ DAO – Thực hiện truy vấn INSERT
-            ↓
-🐬 SQL Server – Lưu thông tin tài khoản
-            ↓
-✅ Trả kết quả đăng ký về giao diện
-```
+1. **Tiếp nhận dữ liệu:** Giao diện tiếp nhận thông tin do người dùng nhập và chuyển đến phương thức xử lý tương ứng.
+2. **Truy xuất dữ liệu:** Lớp `UserDAO` thiết lập kết nối và thực thi câu lệnh SQL phù hợp.
+3. **Xử lý kết quả:** Kết quả truy vấn được đọc và chuyển thành giá trị trả về cho thành phần gọi.
+4. **Phản hồi giao diện:** Giao diện dựa trên kết quả nhận được để hiển thị thông tin hoặc thông báo trạng thái tương ứng.
 
-- Người dùng nhập tên đăng nhập, mật khẩu, họ tên, email và xác nhận mật khẩu.
-- Dữ liệu được kiểm tra trước khi thực hiện đăng ký.
-- Mật khẩu được xử lý bằng **PBKDF2 kết hợp Salt** trước khi lưu trữ (không lưu mật khẩu gốc vào SQL Server).
-- Thông tin tài khoản được lưu vào SQL Server thông qua lớp DAO.
+### 🗄️ Các thành phần truy xuất dữ liệu
 
-### 🔑 2. Xử lý đăng nhập
-
-```text
-👤 Người dùng nhập thông tin đăng nhập
-            ↓
-🖥️ UI – Tiếp nhận thông tin
-            ↓
-⚙️ BLL – Điều phối xác thực
-            ↓
-🗄️ DAO – Truy vấn thông tin tài khoản
-            ↓
-⚙️ BLL – Kiểm tra mật khẩu
-            ↓
-      🔍 Kết quả xác thực
-        ↙           ↘
-   ❌ Thất bại      ✅ Thành công
-       ↓                ↓
-  Thông báo lỗi    Cập nhật thời gian
-                   đăng nhập gần nhất
-                         ↓
-                  🏠 Mở Form chính
-```
-
-- Người dùng nhập tên đăng nhập và mật khẩu.
-- Thông tin tài khoản được truy vấn từ SQL Server để phục vụ quá trình xác thực.
-- Nếu xác thực thất bại, ứng dụng hiển thị thông báo và yêu cầu người dùng nhập lại.
-- Nếu xác thực thành công, hệ thống cập nhật thời gian đăng nhập gần nhất (`LanDangNhapCuoi`) và hiển thị thông tin người dùng trên Form chính.
-
-### 📊 3. Xử lý truy xuất và hiển thị dữ liệu
-
-Sau khi đăng nhập thành công, ứng dụng truy xuất thông tin tài khoản từ SQL Server và hiển thị trên giao diện chính, bao gồm:
-
-| Thông tin | Mô tả |
+| Thành phần | Vai trò |
 |---|---|
-| 👤 Họ và tên | Tên đầy đủ của người dùng |
-| 🪪 Tên đăng nhập | Tài khoản dùng để đăng nhập |
-| 📧 Email | Địa chỉ email đã đăng ký |
-| 🕒 Lần đăng nhập gần nhất | Thời điểm đăng nhập được ghi nhận |
+| `SqlConnection` | Thiết lập kết nối đến SQL Server. |
+| `SqlCommand` | Thực thi các câu lệnh SQL. |
+| `ExecuteReader()` | Đọc dữ liệu trả về từ truy vấn. |
+| `ExecuteNonQuery()` | Thực thi các câu lệnh thêm hoặc cập nhật dữ liệu. |
 
-Khi người dùng chọn **Đăng xuất**, ứng dụng quay lại Form đăng nhập.
+### ♻️ Quản lý tài nguyên
 
-### 🏗️ 4. Sơ đồ kiến trúc xử lý dữ liệu
-
-```text
-┌──────────────────────────────┐
-│       UI – Windows Forms     │
-│       Giao diện người dùng   │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│     BLL – Business Logic     │
-│        Xử lý nghiệp vụ       │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│      DAO – Data Access       │
-│        Truy cập dữ liệu      │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│          SQL Server          │
-│      Lưu trữ dữ liệu         │
-└──────────────────────────────┘
-```
-
-**📌 Nguyên tắc xử lý:** UI tiếp nhận và hiển thị thông tin, BLL xử lý nghiệp vụ, DAO thực hiện truy vấn dữ liệu và SQL Server đảm nhiệm việc lưu trữ.
+Các đối tượng kết nối, câu lệnh SQL và bộ đọc dữ liệu được quản lý bằng `using` để tự động giải phóng tài nguyên sau khi sử dụng, kể cả khi xảy ra ngoại lệ.
