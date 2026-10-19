@@ -95,7 +95,7 @@ Ví dụ minh họa:
 
 - 📝 **Đăng ký:** Tạo tài khoản mới và kiểm tra dữ liệu đầu vào.
 - 🔐 **Đăng nhập:** Xác thực tài khoản người dùng.
-- 👤 **Trang chủ:** Hiển thị thông tin người dùng sau khi đăng nhập.
+- 👤 **Trang chính:** Hiển thị thông tin người dùng sau khi đăng nhập.
 ## Chi tiết chức năng chính
 
 ### 👤 Đăng ký tài khoản
